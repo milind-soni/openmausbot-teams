@@ -2,6 +2,7 @@ import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { dirname, join, normalize, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse as parseYaml } from "yaml";
+import { GENERATED_MARK, mainFile, readFolder } from "./teams-folder.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const errors = [];
@@ -238,18 +239,27 @@ if (!catalog || catalog.format !== "openmaus.catalog" || catalog.version !== 1 |
   fail("catalog.json: expected openmaus.catalog version 1");
 } else {
   const slugs = new Set();
+  // Older apps refuse a catalog of more than 100 teams outright.
+  if (catalog.teams.length > 100) fail(`catalog.json: ${catalog.teams.length} teams; older apps read at most 100`);
   for (const team of catalog.teams) {
+    const generated = team.folder !== undefined;
+    if (generated && (team.folder !== `teams/${team.slug}` || !mainFile(root, team.slug))) {
+      fail(`catalog.json: ${team.slug} is marked as a template folder, but teams/${team.slug} has no team.md or bot.md`);
+      continue;
+    }
     if (!text(team.slug, 80) || !/^[a-z0-9][a-z0-9-]*$/.test(team.slug)) fail("catalog.json: invalid team slug");
     else if (slugs.has(team.slug)) fail(`catalog.json: duplicate slug ${team.slug}`);
     else slugs.add(team.slug);
     if (!text(team.name, 100) || !text(team.summary, 300)) fail(`catalog.json: ${team.slug} needs a name and summary`);
     if (!safeFile(team.manifest, ".mausteam.json")) fail(`catalog.json: missing manifest for ${team.slug}`);
     else validateManifest(team.manifest, team.members);
-    if (!safeFile(team.package, ".md")) fail(`catalog.json: missing Markdown playbook for ${team.slug}`);
+    if (generated && team.package === undefined) {
+      // Too big for a one-file playbook: older apps use the manifest.
+    } else if (!safeFile(team.package, ".md")) fail(`catalog.json: missing Markdown playbook for ${team.slug}`);
     else if (!team.package.startsWith("packages/")) fail(`catalog.json: package must stay inside packages/`);
     else validatePackage(team.package, team.slug, team.members);
     if (!safeFile(team.readme, "README.md")) fail(`catalog.json: missing README for ${team.slug}`);
-    if (!Array.isArray(team.skills) || team.skills.length === 0) fail(`catalog.json: ${team.slug} needs at least one skill`);
+    if (!Array.isArray(team.skills) || (!generated && team.skills.length === 0)) fail(`catalog.json: ${team.slug} needs at least one skill`);
     for (const skill of team.skills ?? []) {
       if (!safeFile(skill, "SKILL.md")) fail(`catalog.json: missing skill ${String(skill)}`);
       else if (!skill.startsWith(`teams/${team.slug}/skills/`)) fail(`catalog.json: skill must stay inside ${team.slug}`);
@@ -259,8 +269,19 @@ if (!catalog || catalog.format !== "openmaus.catalog" || catalog.version !== 1 |
   const folders = readdirSync(join(root, "teams"), { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
     .map((entry) => entry.name);
+  const legacySlugs = new Set(catalog.teams.filter((team) => team.folder === undefined).map((team) => team.slug));
+  let templates = 0;
   for (const folder of folders) {
-    if (!slugs.has(folder)) fail(`teams/${folder}: folder is missing from catalog.json`);
+    if (mainFile(root, folder)) {
+      // A template folder: checked the way scripts/build-catalog.mjs reads it, which makes its catalog entry.
+      templates += 1;
+      const { errors: folderErrors } = readFolder(root, folder);
+      folderErrors.forEach(fail);
+      if (legacySlugs.has(folder)) fail(`teams/${folder}: an older team already has this name; rename the folder`);
+      const playbook = join(root, "packages", `${folder}.md`);
+      if (existsSync(playbook) && !readFileSync(playbook, "utf8").includes(`\n${GENERATED_MARK}`)) fail(`teams/${folder}: packages/${folder}.md is a hand-written playbook; rename the folder`);
+      if (!folderErrors.length && !slugs.has(folder)) fail(`teams/${folder}: run npm run catalog to add it to catalog.json`);
+    } else if (!slugs.has(folder)) fail(`teams/${folder}: folder is missing from catalog.json`);
   }
 
   const listedPackages = new Set(catalog.teams.map((team) => team.package));
@@ -280,7 +301,7 @@ if (!catalog || catalog.format !== "openmaus.catalog" || catalog.version !== 1 |
   }
 
   if (errors.length === 0) {
-    console.log(`Validated ${catalog.teams.length} catalog teams and ${standalone} standalone playbooks.`);
+    console.log(`Validated ${catalog.teams.length} catalog teams (${templates} template folders) and ${standalone} standalone playbooks.`);
   }
 }
 

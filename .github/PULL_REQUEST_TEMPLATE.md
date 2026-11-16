@@ -4,7 +4,8 @@
 
 ## What is included
 
-- [ ] The manifest imports successfully in OpenMausBot
+- [ ] One folder, `teams/<slug>/`, with `team.md` or `bot.md` (see FORMAT.md); `catalog.json` is not edited by hand
+- [ ] It imports in MausBot
 - [ ] Every member has a distinct role and clear instructions
 - [ ] Every referenced skill is readable Markdown
 - [ ] `npm test` passes

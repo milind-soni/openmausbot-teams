@@ -1,4 +1,34 @@
-# BotMRR Markdown v1
+# Formats
+
+There are two layouts. New submissions use the template folder. The original teams keep the one-file playbook.
+
+## Template folder (BotMRR Markdown v2)
+
+MausBot's Publish sends this folder. You can also make it by hand.
+
+```
+teams/<slug>/
+  team.md                    # a department; one bot uses bot.md instead (exactly one of the two)
+  skills/<name>/SKILL.md     # Agent Skills: frontmatter name + description, body = instructions
+  avatars/<key>.webp         # optional, 64 KB at most (png and jpg also work)
+  README.md                  # optional, for people browsing GitHub
+```
+
+`team.md` or `bot.md` starts with YAML frontmatter. It has `botmrr: 2` and the OpenMausBot package fields (`name`,
+`tagline`, `summary`, `category`, `author`, `license`, `outcomes`, `setupMinutes`, `requirements`, `team`, `agents`,
+`rooms`, `routines`, `playbooks`). After the frontmatter comes a readable Markdown body. Inside the folder, two fields
+point at files:
+
+- `agents[].skills: [name]` reads `skills/<name>/SKILL.md`.
+- `agents[].appearance.avatar: avatars/<key>.webp` reads that picture.
+
+The folder name is the slug, and an `id` in the frontmatter is ignored. `bot.md` holds exactly one bot. Routines must
+say `enabledAfterInstall: false`. Nothing else may be in the folder.
+
+From the folders, `npm run catalog` builds `catalog.json`, `packages/<slug>.md` (v1, below) and
+`teams/<slug>/team.mausteam.json` for older apps. Contributors never edit those files. On main, CI rebuilds them.
+
+## One-file playbook (BotMRR Markdown v1)
 
 The format is intentionally one normal Markdown file.
 

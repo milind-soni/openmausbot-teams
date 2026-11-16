@@ -6,11 +6,12 @@
   "description": "Community team templates for OpenMausBot",
   "scripts": {
     "dev": "next dev --port 3011",
-    "build": "npm run validate && next build",
+    "build": "npm run catalog && npm run validate && next build",
     "start": "next start --port 3011",
     "validate": "node scripts/validate.mjs",
     "typecheck": "tsc --noEmit",
-    "test": "node scripts/validate.mjs"
+    "test": "node scripts/build-catalog.mjs && node scripts/validate.mjs",
+    "catalog": "node scripts/build-catalog.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
