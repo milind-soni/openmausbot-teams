@@ -18,4 +18,35 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # Builds catalog.json, packages/<slug>.md and the older apps' files from the template folders, then checks everything.
       - run: npm test
+
+  # On main, commit what the build made, so submissions never edit catalog.json themselves.
+  catalog:
+    if: github.event_name == 'push'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: catalog-main
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Commit the generated catalog
+        run: |
+          git add -A catalog.json packages teams
+          if git diff --cached --quiet; then
+            echo "Catalog is up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Build catalog from template folders"
+          git push

@@ -4,13 +4,17 @@ Thanks for sharing a useful AI team with every agent community—not just OpenMa
 
 ## Before opening a pull request
 
-1. Copy an existing file under `packages/` and keep it as ordinary `.md`.
-2. Focus the playbook on one measurable outcome with distinct, practical specialist roles.
-3. Make the Markdown body complete enough that a Chief of Staff in any agent product can activate and run the team.
-4. Keep the YAML frontmatter aligned with the readable body so products that support direct import can create the same structure.
-5. Explain each connected app in plain language and mark optional connections explicitly.
-6. Keep every suggested routine paused until the user reviews and enables it.
-7. Add the playbook to `catalog.json`, retain a legacy folder under `teams/`, and run `npm test` and `npm run build`.
+The easiest way is **Publish** in MausBot. It opens the pull request for you, and you don't need a GitHub account.
+
+By hand:
+
+1. Add one folder, `teams/<slug>/`, with `team.md` (a department) or `bot.md` (one bot), plus its `skills/<name>/SKILL.md` and optional `avatars/` and `README.md`. See [FORMAT.md](FORMAT.md).
+2. Focus the template on one measurable outcome with distinct, practical roles.
+3. Explain each connected app in plain language and mark optional connections explicitly.
+4. Keep every suggested routine paused (`enabledAfterInstall: false`).
+5. Run `npm test`. It builds the catalog and checks everything. Don't commit `catalog.json`, `packages/<slug>.md` or `team.mausteam.json`; CI rebuilds them on main.
+
+Standalone one-file playbooks still go in `packages/<slug>.md` (BotMRR v1).
 
 ## Safety rules
 

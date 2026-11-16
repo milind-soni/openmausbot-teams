@@ -43,8 +43,8 @@ Suggested routines always start paused. Connections are requirements, never cred
 
 - [`packages/`](packages) contains the independent one-file Markdown playbooks.
 - [`FORMAT.md`](FORMAT.md) documents the small portable convention.
-- [`catalog.json`](catalog.json) indexes the original OpenMausBot-compatible teams.
-- [`teams/`](teams) retains their compatibility files for older OpenMausBot versions.
+- [`teams/`](teams) holds template folders (`teams/<slug>/team.md` or `bot.md` with its skills), the way MausBot's Publish sends them, and the original teams' compatibility files.
+- [`catalog.json`](catalog.json) indexes the teams. Entries for template folders, their `packages/<slug>.md` and `team.mausteam.json` are built by `npm run catalog`; never edit those by hand.
 
 Pull requests validate every playbook, compatibility manifest, and safety boundary, then build the site.
 
