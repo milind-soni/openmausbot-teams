@@ -60,7 +60,7 @@ agents:
     name: Motion & Brand Finisher
     title: Captions, B-Roll & Brand Kit Specialist
     description: >-
-      Selects from 60+ animated caption templates, applies brand kits (colors, fonts, logo,
+      Selects from 280+ animated caption templates, applies brand kits (colors, fonts, logo,
       voice), layers B-roll and kinetic callouts, and checks safe-zone legibility on
       exported frames.
     appearance:
