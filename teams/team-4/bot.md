@@ -27,11 +27,13 @@ agents:
     appearance:
       color: chrome
     skills:
+      - chief-of-staff-playbook
       - coordinate-and-audit-bots
       - chief-of-staff-rhythm
       - openmausbot-engine-check
       - record-and-replay-desktop
 skills:
+  - chief-of-staff-playbook
   - coordinate-and-audit-bots
   - chief-of-staff-rhythm
   - openmausbot-engine-check
@@ -66,7 +68,7 @@ None. Each person connects their own accounts.
 
 ### 董事长
 
-Skills: coordinate-and-audit-bots, chief-of-staff-rhythm, openmausbot-engine-check, record-and-replay-desktop
+Skills: chief-of-staff-playbook, coordinate-and-audit-bots, chief-of-staff-rhythm, openmausbot-engine-check, record-and-replay-desktop
 
 ## Chief of Staff
 
