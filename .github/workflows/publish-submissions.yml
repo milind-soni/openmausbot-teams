@@ -1,0 +1,76 @@
+name: Publish submissions
+
+# Templates published from MausBot arrive as pull requests from the MausBot publisher app. Each one that passed
+# "Validate teams" and only adds files under one teams/<slug>/ folder is merged here, then catalog.json is rebuilt, so
+# it shows in every app's Templates within minutes. A merge made with GITHUB_TOKEN starts no push workflow, so this job
+# builds the catalog itself. Run it by hand to sweep pull requests opened before it existed.
+on:
+  workflow_run:
+    workflows: [Validate teams]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: catalog-main
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+    steps:
+      - name: Merge validated submissions
+        run: |
+          merged=0
+          for pr in $(gh api "repos/$REPO/pulls?state=open&per_page=100" --paginate \
+              --jq '.[] | select(.user.login == "mausbot-publisher[bot]" and .head.repo.full_name == env.REPO) | .number'); do
+            sha=$(gh api "repos/$REPO/pulls/$pr" --jq .head.sha)
+            # Security: the merged files are only ever data under one teams/<slug>/, never scripts or workflows.
+            folders=$(gh api "repos/$REPO/pulls/$pr/files?per_page=100" --paginate --jq '.[] | "\(.filename) \(.previous_filename // "")"' \
+              | tr ' ' '\n' | grep -v '^$' \
+              | awk -F/ '$1 == "teams" && NF >= 3 && $2 ~ /^[a-z0-9][a-z0-9-]*$/ { print $2; next } { print "!" }' | sort -u)
+            if [ "$(echo "$folders" | wc -l)" -ne 1 ] || [ "$folders" = "!" ]; then
+              echo "#$pr: skipped, it changes files outside one teams/<slug>/ folder"; continue
+            fi
+            passed=$(gh api "repos/$REPO/commits/$sha/check-runs?check_name=validate" --jq '[.check_runs[] | select(.conclusion == "success")] | length')
+            if [ "$passed" -eq 0 ]; then echo "#$pr: skipped, validate has not passed on $sha"; continue; fi
+            if gh pr merge "$pr" -R "$REPO" --squash --delete-branch --match-head-commit "$sha"; then
+              merged=$((merged + 1))
+            else
+              echo "#$pr: merge failed"
+            fi
+          done
+          echo "MERGED=$merged" >> "$GITHUB_ENV"
+      - if: env.MERGED != '0'
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - if: env.MERGED != '0'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - if: env.MERGED != '0'
+        run: npm ci
+      # Builds catalog.json from the template folders, then checks everything.
+      - if: env.MERGED != '0'
+        run: npm test
+      - if: env.MERGED != '0'
+        name: Commit the generated catalog
+        run: |
+          git add -A catalog.json packages teams
+          if git diff --cached --quiet; then
+            echo "Catalog is up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Build catalog from template folders"
+          git push
