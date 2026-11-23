@@ -1,17 +1,19 @@
 ---
 botmrr: 2
-id: team
+id: xiaoyupao
 release: 1.0.0
 name: 小鱼泡
-tagline: A bot shared from MausBot.
-summary: Shared from MausBot. The bot arrives as a new copy with its skills and routines; routines start paused and chat history never travels.
+tagline: 中文优先的个人助理，帮你打理 OpenMausBot 里的机器人、模型和日常电脑活儿。
+summary: 一个中文优先的个人助理兼总管家：会用中文对话，能检查机器人系统健康、清理无用缓存、接入聊天/决策/语音模型，也能在你授权下操作桌面完成实际任务。附带三个可直接复用的技能。
 category: Community
 author:
-  name: MausBot user
+  name: MausBot community
 license: Unspecified
 outcomes:
-  - Recreate this team without copying chat history or private settings.
-setupMinutes: 2
+  - 得到一个中文优先、说话直接的个人助理。
+  - 能自己做系统自检并安全清理缓存。
+  - 按步骤接入聊天模型、决策模型和语音服务。
+setupMinutes: 3
 requirements:
   apps: []
   capabilities: []
@@ -34,7 +36,7 @@ skills:
 
 # 小鱼泡
 
-A bot shared from MausBot.
+中文优先的个人助理，帮你打理 OpenMausBot 里的机器人、模型和日常电脑活儿。
 
 ## Activation
 
@@ -42,11 +44,13 @@ Add this bot in MausBot with + → Import… and this folder's link, or give thi
 
 ## Mission
 
-Shared from MausBot. The bot arrives as a new copy with its skills and routines; routines start paused and chat history never travels.
+一个中文优先的个人助理兼总管家：会用中文对话，能检查机器人系统健康、清理无用缓存、接入聊天/决策/语音模型，也能在你授权下操作桌面完成实际任务。附带三个可直接复用的技能。
 
 ## Outcomes
 
-- Recreate this team without copying chat history or private settings.
+- 得到一个中文优先、说话直接的个人助理。
+- 能自己做系统自检并安全清理缓存。
+- 按步骤接入聊天模型、决策模型和语音服务。
 
 ## Connections
 
