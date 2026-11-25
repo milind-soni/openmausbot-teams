@@ -1524,7 +1524,7 @@ skills:
         > 原型轉正式模板 → `/mycms-template-convert`（套版流程）
         > 其他所有工程事務 → 本 Skill（一站查完）
 
-        **使用方式**：根據使用者需求，比對下方關鍵字標籤，用 Read 工具載入對應的 detail 檔案。detail 檔案路徑為 `C:/Users/yuchi/.claude/skills/mycms-engineer/detail/`。
+        **使用方式**：根據使用者需求，比對下方關鍵字標籤，用 Read 工具載入對應的 detail 檔案。detail 檔案路徑為 `C:~/.claude/skills/mycms-engineer/detail/`。
 
         ---
 
