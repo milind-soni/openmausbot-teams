@@ -116,6 +116,10 @@ export function readFolder(root, slug) {
   for (const [index, routine] of (Array.isArray(meta.routines) ? meta.routines : []).entries()) {
     if (routine?.enabledAfterInstall === true) bad(`routine ${index + 1} must arrive paused (enabledAfterInstall: false)`);
     if (routine?.agent !== undefined && !keys.has(routine.agent)) bad(`routine ${index + 1} names an unknown bot`);
+    const weekdays = routine?.schedule?.weekdays;
+    if (weekdays !== undefined && (!Array.isArray(weekdays) || weekdays.some((day) => weekdayNumber(day) === null))) {
+      bad(`routine ${index + 1} has weekdays that aren't 0-6 (0 is Sunday) or day names`);
+    }
   }
   for (const app of meta.requirements?.apps ?? []) {
     if (!text(app?.label, 100) || !optional(app?.reason, 240)) bad("each app in requirements.apps needs a label (and a reason up to 240 characters)");
@@ -159,6 +163,18 @@ const defaults = (folder) => {
   };
 };
 
+const DAY_NAMES = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+/** A weekday as the app counts it, 0-6 from Sunday: 7 (Sunday, as cron also writes it) is 0, and "mon" or "Monday"
+ * is 1. Null when it is neither. */
+function weekdayNumber(day) {
+  if (Number.isInteger(day)) return day >= 0 && day <= 7 ? day % 7 : null;
+  const name = typeof day === "string" ? day.trim().toLowerCase() : "";
+  const index = DAY_NAMES.findIndex((full) => name === full || name === full.slice(0, 3));
+  return index === -1 ? null : index;
+}
+const appWeekdays = (weekdays) => [...new Set(weekdays.map(weekdayNumber))].sort((a, b) => a - b);
+const appSchedule = (schedule) => (schedule.type === "daily" ? { ...schedule, weekdays: appWeekdays(schedule.weekdays) } : schedule);
+
 /** The BotMRR v1 package older apps install and the site lists. Routines older apps can't read, rooms' Auto and
  * pictures are left out; skills are inlined while there are at most 20. Null when it can't be made. */
 export function packageV1(folder) {
@@ -185,7 +201,7 @@ export function packageV1(folder) {
     && Number.isInteger(routine.durationMinutes) && routine.durationMinutes >= 5 && routine.durationMinutes <= 240
     && ((routine.schedule?.type === "daily" && /^([01]\d|2[0-3]):[0-5]\d$/.test(routine.schedule.time ?? "") && Array.isArray(routine.schedule.weekdays) && routine.schedule.weekdays.length)
       || (routine.schedule?.type === "once" && Number.isInteger(routine.schedule.at))))
-    .map(({ key, name, agent, prompt, runOn, schedule, durationMinutes, overlap }) => ({ key, name, agent, prompt, runOn, schedule, durationMinutes,
+    .map(({ key, name, agent, prompt, runOn, schedule, durationMinutes, overlap }) => ({ key, name, agent, prompt, runOn, schedule: appSchedule(schedule), durationMinutes,
       ...(overlap === "skip" || overlap === "queue" ? { overlap } : {}), enabledAfterInstall: false }));
   const playbooks = (Array.isArray(meta.playbooks) ? meta.playbooks : []).filter((playbook) => text(playbook?.key, 64) && text(playbook.name, 100)
     && text(playbook.summary, 300) && text(playbook.instructions, 24_000) && Array.isArray(playbook.triggers) && playbook.triggers.length);
@@ -265,7 +281,49 @@ export function catalogAuthor(folder) {
   return NOBODY.has(line.toLowerCase()) ? undefined : line;
 }
 
-/** The folder's catalog entry. `folder` marks it as generated, and newer apps read the folder itself from it. */
+/**
+ * Whether MausBot's folder reader takes the folder as it is. The app reads a folder strictly: the fields this repo
+ * fills in for the generated files must be in the frontmatter itself. A folder that lacks one is still listed, and
+ * apps add it from the generated playbook instead.
+ */
+export function appReadsFolder(folder) {
+  const { meta } = folder;
+  return text(meta.id, 80) && /^[a-z0-9][a-z0-9-]*$/.test(meta.id.trim()) && /^\d+\.\d+\.\d+$/.test(String(meta.release ?? ""))
+    && text(meta.summary, 2000) && text(meta.category, 80) && text(meta.author?.name, 100) && text(meta.license, 80)
+    && Array.isArray(meta.outcomes) && meta.outcomes.length > 0 && Number.isInteger(meta.setupMinutes)
+    && (meta.team === undefined || meta.team === null || text(meta.team.name, 60))
+    && (Array.isArray(meta.routines) ? meta.routines : []).every((routine) => !Array.isArray(routine?.schedule?.weekdays) || routine.schedule.weekdays.every((day) => Number.isInteger(day) && day >= 0 && day <= 6));
+}
+
+/** Every colour MausBot draws a bot in; the generated files keep to COLORS, which older apps also know. */
+const APP_COLORS = [...COLORS, "silver", "chrome"];
+const LOOK = /^[a-z0-9][a-z0-9-]{0,39}$/;
+
+/** A colour from the slug, for a bot that names none, so a template's default mascot keeps the same colour. */
+export function slugColor(slug) {
+  let hash = 0;
+  for (const char of slug) hash = (hash * 31 + char.codePointAt(0)) >>> 0;
+  const colors = [...COLORS];
+  return colors[hash % colors.length];
+}
+
+/** The gallery's faces: each bot's colour, mascot and picture (a path in this repo), as its appearance says. */
+export function catalogAvatars(slug, agents, pictureBase) {
+  return agents.filter((agent) => text(agent?.key, 64) && text(agent?.name, 100)).map((agent) => {
+    const look = agent.appearance ?? {};
+    const picture = typeof look.avatar === "string" && /^avatars\/[a-z0-9][a-z0-9_-]{0,63}\.(?:webp|png|jpg)$/.test(look.avatar) && pictureBase
+      ? `${pictureBase}/${look.avatar}` : undefined;
+    return {
+      key: agent.key, name: agent.name.trim(), color: APP_COLORS.includes(look.color) ? look.color : slugColor(slug),
+      ...(typeof look.mascotBody === "string" && LOOK.test(look.mascotBody) ? { mascotBody: look.mascotBody } : {}),
+      ...(typeof look.mascotExpression === "string" && LOOK.test(look.mascotExpression) ? { mascotExpression: look.mascotExpression } : {}),
+      ...(picture ? { picture } : {}),
+    };
+  });
+}
+
+/** The folder's catalog entry. `main` marks it as generated; `folder` tells newer apps to read the folder itself, and
+ * is left out when the app can't, so it adds the generated playbook. */
 export function catalogEntry(folder, hasPackage) {
   const { meta, slug } = folder, base = defaults(folder);
   const author = catalogAuthor(folder);
@@ -276,8 +334,9 @@ export function catalogEntry(folder, hasPackage) {
     members: meta.agents.length,
     skills: folder.skills.map((skill) => `teams/${slug}/skills/${skill.name}/SKILL.md`),
     requires: { apps: base.apps.map((app) => app.label) },
-    folder: `teams/${slug}`, kind: folder.kind, main: `teams/${slug}/${folder.main}`,
+    ...(hasPackage && !appReadsFolder(folder) ? {} : { folder: `teams/${slug}` }), kind: folder.kind, main: `teams/${slug}/${folder.main}`,
     ...(author ? { author } : {}),
+    avatars: catalogAvatars(slug, meta.agents, `teams/${slug}`),
   };
 }
 

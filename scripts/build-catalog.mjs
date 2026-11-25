@@ -1,5 +1,6 @@
 // Builds what older apps and the site read from the template folders, so a submission only adds `teams/<slug>/`:
-//   catalog.json                     entries for template folders (marked with `folder`); the older teams' entries stay as written
+//   catalog.json                     entries for template folders (marked with `main`); the older teams' entries stay as
+//                                    written, plus the faces the gallery shows, read from their own files
 //   packages/<slug>.md               BotMRR v1, marked as generated
 //   teams/<slug>/team.mausteam.json  openmaus.team v1
 //   teams/<slug>/README.md           only when the folder has none
@@ -9,7 +10,21 @@ import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from "no
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { isDeepStrictEqual } from "node:util";
-import { catalogEntry, GENERATED_MARK, mainFile, manifestV1, packageV1, readFolder, readme } from "./teams-folder.mjs";
+import { catalogAvatars, catalogEntry, frontmatter, GENERATED_MARK, mainFile, manifestV1, packageV1, readFolder, readme } from "./teams-folder.mjs";
+
+/** An older team's bots as its playbook (or else its manifest) lists them. */
+function legacyAgents(root, entry) {
+  try {
+    const agents = entry.package ? frontmatter(readFileSync(join(root, entry.package), "utf8")).meta.agents : undefined;
+    if (Array.isArray(agents)) return agents;
+  } catch {}
+  try {
+    const members = JSON.parse(readFileSync(join(root, entry.manifest), "utf8")).team?.members;
+    return Array.isArray(members) ? members : [];
+  } catch {
+    return [];
+  }
+}
 
 export function buildCatalog(root) {
   const written = [];
@@ -21,7 +36,8 @@ export function buildCatalog(root) {
   };
   const generatedPackage = (path) => existsSync(join(root, path)) && readFileSync(join(root, path), "utf8").includes(`\n${GENERATED_MARK}`);
   const catalog = JSON.parse(readFileSync(join(root, "catalog.json"), "utf8"));
-  const legacy = catalog.teams.filter((entry) => entry.folder === undefined);
+  const legacy = catalog.teams.filter((entry) => entry.main === undefined)
+    .map((entry) => ({ ...entry, avatars: catalogAvatars(entry.slug, legacyAgents(root, entry), null) }));
   const legacySlugs = new Set(legacy.map((entry) => entry.slug));
   const slugs = readdirSync(join(root, "teams"), { withFileTypes: true }).filter((entry) => entry.isDirectory()).map((entry) => entry.name).sort();
   const entries = [], skipped = [];

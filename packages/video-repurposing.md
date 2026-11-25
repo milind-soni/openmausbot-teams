@@ -74,7 +74,7 @@ routines:
       type: daily
       time: 09:30
       weekdays:
-        - mon
+        - 1
     durationMinutes: 15
     enabledAfterInstall: false
 playbooks:

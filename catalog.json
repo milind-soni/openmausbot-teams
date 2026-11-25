@@ -25,7 +25,33 @@
           "Google Analytics",
           "Google Sheets"
         ]
-      }
+      },
+      "avatars": [
+        {
+          "key": "nova",
+          "name": "Nova",
+          "color": "purple",
+          "mascotExpression": "focused"
+        },
+        {
+          "key": "scout",
+          "name": "Scout",
+          "color": "cyan",
+          "mascotExpression": "curious"
+        },
+        {
+          "key": "atlas",
+          "name": "Atlas",
+          "color": "blue",
+          "mascotExpression": "thinking"
+        },
+        {
+          "key": "quill",
+          "name": "Quill",
+          "color": "coral",
+          "mascotExpression": "happy"
+        }
+      ]
     },
     {
       "slug": "engineering",
@@ -48,7 +74,33 @@
         "apps": [
           "GitHub"
         ]
-      }
+      },
+      "avatars": [
+        {
+          "key": "ada",
+          "name": "Ada",
+          "color": "purple",
+          "mascotExpression": "focused"
+        },
+        {
+          "key": "lin",
+          "name": "Lin",
+          "color": "green",
+          "mascotExpression": "thinking"
+        },
+        {
+          "key": "pixel",
+          "name": "Pixel",
+          "color": "cyan",
+          "mascotExpression": "happy"
+        },
+        {
+          "key": "rigel",
+          "name": "Rigel",
+          "color": "orange",
+          "mascotExpression": "curious"
+        }
+      ]
     },
     {
       "slug": "100x-marketing",
@@ -73,7 +125,33 @@
           "Google Sheets",
           "Slack"
         ]
-      }
+      },
+      "avatars": [
+        {
+          "key": "maya",
+          "name": "Maya",
+          "color": "purple",
+          "mascotExpression": "focused"
+        },
+        {
+          "key": "echo",
+          "name": "Echo",
+          "color": "coral",
+          "mascotExpression": "happy"
+        },
+        {
+          "key": "orbit",
+          "name": "Orbit",
+          "color": "blue",
+          "mascotExpression": "curious"
+        },
+        {
+          "key": "lens",
+          "name": "Lens",
+          "color": "teal",
+          "mascotExpression": "thinking"
+        }
+      ]
     },
     {
       "slug": "reddit-lead-miner",
@@ -96,7 +174,21 @@
           "Reddit",
           "Google Sheets"
         ]
-      }
+      },
+      "avatars": [
+        {
+          "key": "scout",
+          "name": "Scout",
+          "color": "cyan",
+          "mascotExpression": "curious"
+        },
+        {
+          "key": "relay",
+          "name": "Relay",
+          "color": "green",
+          "mascotExpression": "happy"
+        }
+      ]
     },
     {
       "slug": "competitor-watch",
@@ -118,7 +210,21 @@
         "apps": [
           "Google Sheets"
         ]
-      }
+      },
+      "avatars": [
+        {
+          "key": "watcher",
+          "name": "Watcher",
+          "color": "blue",
+          "mascotExpression": "curious"
+        },
+        {
+          "key": "prism",
+          "name": "Prism",
+          "color": "purple",
+          "mascotExpression": "thinking"
+        }
+      ]
     },
     {
       "slug": "inbox-follow-up",
@@ -141,7 +247,21 @@
           "Gmail",
           "HubSpot"
         ]
-      }
+      },
+      "avatars": [
+        {
+          "key": "keeper",
+          "name": "Keeper",
+          "color": "teal",
+          "mascotExpression": "focused"
+        },
+        {
+          "key": "nudge",
+          "name": "Nudge",
+          "color": "green",
+          "mascotExpression": "happy"
+        }
+      ]
     },
     {
       "slug": "japan-life-admin",
@@ -161,7 +281,21 @@
       ],
       "requires": {
         "apps": []
-      }
+      },
+      "avatars": [
+        {
+          "key": "sora",
+          "name": "Sora",
+          "color": "blue",
+          "mascotExpression": "curious"
+        },
+        {
+          "key": "seikatsu",
+          "name": "Seikatsu",
+          "color": "green",
+          "mascotExpression": "happy"
+        }
+      ]
     },
     {
       "slug": "taiwan-life-admin",
@@ -181,7 +315,21 @@
       ],
       "requires": {
         "apps": []
-      }
+      },
+      "avatars": [
+        {
+          "key": "tianqi",
+          "name": "Tianqi",
+          "color": "cyan",
+          "mascotExpression": "curious"
+        },
+        {
+          "key": "shenghuo",
+          "name": "Shenghuo",
+          "color": "orange",
+          "mascotExpression": "happy"
+        }
+      ]
     },
     {
       "slug": "1",
@@ -210,7 +358,16 @@
       },
       "folder": "teams/1",
       "kind": "bot",
-      "main": "teams/1/bot.md"
+      "main": "teams/1/bot.md",
+      "avatars": [
+        {
+          "key": "1",
+          "name": "1",
+          "color": "red",
+          "mascotBody": "circle",
+          "mascotExpression": "curious"
+        }
+      ]
     },
     {
       "slug": "ai-media-studio",
@@ -232,10 +389,17 @@
           "MuAPI"
         ]
       },
-      "folder": "teams/ai-media-studio",
       "kind": "bot",
       "main": "teams/ai-media-studio/bot.md",
-      "author": "MuAPI"
+      "author": "MuAPI",
+      "avatars": [
+        {
+          "key": "studio",
+          "name": "Studio",
+          "color": "purple",
+          "mascotExpression": "happy"
+        }
+      ]
     },
     {
       "slug": "atlas",
@@ -254,7 +418,14 @@
       },
       "folder": "teams/atlas",
       "kind": "bot",
-      "main": "teams/atlas/bot.md"
+      "main": "teams/atlas/bot.md",
+      "avatars": [
+        {
+          "key": "atlas",
+          "name": "Atlas",
+          "color": "orange"
+        }
+      ]
     },
     {
       "slug": "base-dev",
@@ -273,7 +444,14 @@
       },
       "folder": "teams/base-dev",
       "kind": "bot",
-      "main": "teams/base-dev/bot.md"
+      "main": "teams/base-dev/bot.md",
+      "avatars": [
+        {
+          "key": "base-dev",
+          "name": "BASE - DEV",
+          "color": "purple"
+        }
+      ]
     },
     {
       "slug": "ceo",
@@ -292,7 +470,15 @@
       },
       "folder": "teams/ceo",
       "kind": "bot",
-      "main": "teams/ceo/bot.md"
+      "main": "teams/ceo/bot.md",
+      "avatars": [
+        {
+          "key": "ceo",
+          "name": "Ceo",
+          "color": "orange",
+          "mascotBody": "shield"
+        }
+      ]
     },
     {
       "slug": "clicky",
@@ -311,7 +497,16 @@
       },
       "folder": "teams/clicky",
       "kind": "bot",
-      "main": "teams/clicky/bot.md"
+      "main": "teams/clicky/bot.md",
+      "avatars": [
+        {
+          "key": "clicky",
+          "name": "Clicky",
+          "color": "blue",
+          "mascotBody": "cat",
+          "mascotExpression": "curious"
+        }
+      ]
     },
     {
       "slug": "daily-ai-news-report",
@@ -330,7 +525,15 @@
       },
       "folder": "teams/daily-ai-news-report",
       "kind": "bot",
-      "main": "teams/daily-ai-news-report/bot.md"
+      "main": "teams/daily-ai-news-report/bot.md",
+      "avatars": [
+        {
+          "key": "daily-ai-news-report",
+          "name": "Daily AI News Report",
+          "color": "red",
+          "mascotBody": "cursor"
+        }
+      ]
     },
     {
       "slug": "diagram-architect",
@@ -349,7 +552,14 @@
       },
       "folder": "teams/diagram-architect",
       "kind": "bot",
-      "main": "teams/diagram-architect/bot.md"
+      "main": "teams/diagram-architect/bot.md",
+      "avatars": [
+        {
+          "key": "diagram-architect",
+          "name": "Diagram Architect",
+          "color": "yellow"
+        }
+      ]
     },
     {
       "slug": "eros-conformal",
@@ -368,7 +578,26 @@
       },
       "folder": "teams/eros-conformal",
       "kind": "department",
-      "main": "teams/eros-conformal/team.md"
+      "main": "teams/eros-conformal/team.md",
+      "avatars": [
+        {
+          "key": "rio",
+          "name": "Rio",
+          "color": "orange",
+          "mascotBody": "cursor"
+        },
+        {
+          "key": "koda",
+          "name": "Koda",
+          "color": "purple",
+          "mascotBody": "cursor"
+        },
+        {
+          "key": "mausbot",
+          "name": "MausBot",
+          "color": "chrome"
+        }
+      ]
     },
     {
       "slug": "gemini",
@@ -387,7 +616,14 @@
       },
       "folder": "teams/gemini",
       "kind": "bot",
-      "main": "teams/gemini/bot.md"
+      "main": "teams/gemini/bot.md",
+      "avatars": [
+        {
+          "key": "gemini",
+          "name": "Gemini",
+          "color": "blue"
+        }
+      ]
     },
     {
       "slug": "jarvis",
@@ -406,7 +642,15 @@
       },
       "folder": "teams/jarvis",
       "kind": "bot",
-      "main": "teams/jarvis/bot.md"
+      "main": "teams/jarvis/bot.md",
+      "avatars": [
+        {
+          "key": "jarvis",
+          "name": "Jarvis",
+          "color": "teal",
+          "mascotBody": "cursor"
+        }
+      ]
     },
     {
       "slug": "jett-video-editor",
@@ -428,7 +672,14 @@
       "folder": "teams/jett-video-editor",
       "kind": "bot",
       "main": "teams/jett-video-editor/bot.md",
-      "author": "Jett"
+      "author": "Jett",
+      "avatars": [
+        {
+          "key": "jett-video-editor",
+          "name": "Jett — Video Editor",
+          "color": "green"
+        }
+      ]
     },
     {
       "slug": "kimon",
@@ -447,7 +698,15 @@
       },
       "folder": "teams/kimon",
       "kind": "bot",
-      "main": "teams/kimon/bot.md"
+      "main": "teams/kimon/bot.md",
+      "avatars": [
+        {
+          "key": "kimon",
+          "name": "Kimon",
+          "color": "yellow",
+          "mascotBody": "cursor"
+        }
+      ]
     },
     {
       "slug": "kocelmemex-department",
@@ -466,7 +725,49 @@
       },
       "folder": "teams/kocelmemex-department",
       "kind": "department",
-      "main": "teams/kocelmemex-department/team.md"
+      "main": "teams/kocelmemex-department/team.md",
+      "avatars": [
+        {
+          "key": "kocelmemex-logger",
+          "name": "KocelMemeX Logger",
+          "color": "yellow"
+        },
+        {
+          "key": "kocelmemex-executor",
+          "name": "KocelMemeX Executor",
+          "color": "pink"
+        },
+        {
+          "key": "kocelmemex-risk-manager",
+          "name": "KocelMemeX Risk Manager",
+          "color": "cyan"
+        },
+        {
+          "key": "kocelmemex-strategist",
+          "name": "KocelMemeX Strategist",
+          "color": "purple"
+        },
+        {
+          "key": "kocelmemex-analyst",
+          "name": "KocelMemeX Analyst",
+          "color": "orange"
+        },
+        {
+          "key": "kocelmemex-filter",
+          "name": "KocelMemeX Filter",
+          "color": "red"
+        },
+        {
+          "key": "kocelmemex-scout",
+          "name": "KocelMemeX Scout",
+          "color": "blue"
+        },
+        {
+          "key": "kocelmemex-commander",
+          "name": "KocelMemeX Commander",
+          "color": "chrome"
+        }
+      ]
     },
     {
       "slug": "mailbot",
@@ -485,7 +786,15 @@
       },
       "folder": "teams/mailbot",
       "kind": "bot",
-      "main": "teams/mailbot/bot.md"
+      "main": "teams/mailbot/bot.md",
+      "avatars": [
+        {
+          "key": "mailbot",
+          "name": "Mailbot",
+          "color": "coral",
+          "mascotBody": "cursor"
+        }
+      ]
     },
     {
       "slug": "marketing",
@@ -504,7 +813,44 @@
       },
       "folder": "teams/marketing",
       "kind": "department",
-      "main": "teams/marketing/team.md"
+      "main": "teams/marketing/team.md",
+      "avatars": [
+        {
+          "key": "revisor-editorial-b2a",
+          "name": "Revisor Editorial B2A",
+          "color": "yellow"
+        },
+        {
+          "key": "publicador-meta-b2a",
+          "name": "Publicador Meta B2A",
+          "color": "pink"
+        },
+        {
+          "key": "analista-de-crescimento",
+          "name": "Analista de Crescimento",
+          "color": "cyan"
+        },
+        {
+          "key": "produtor-visual",
+          "name": "Produtor Visual",
+          "color": "purple"
+        },
+        {
+          "key": "redator-de-conteudo",
+          "name": "Redator de Conteúdo",
+          "color": "orange"
+        },
+        {
+          "key": "planejador-social",
+          "name": "Planejador Social",
+          "color": "red"
+        },
+        {
+          "key": "estrategista-de-marketing",
+          "name": "Estrategista de Marketing",
+          "color": "blue"
+        }
+      ]
     },
     {
       "slug": "maus",
@@ -528,7 +874,16 @@
       },
       "folder": "teams/maus",
       "kind": "bot",
-      "main": "teams/maus/bot.md"
+      "main": "teams/maus/bot.md",
+      "avatars": [
+        {
+          "key": "maus",
+          "name": "Maus包工头主管",
+          "color": "coral",
+          "mascotBody": "cat",
+          "mascotExpression": "happy"
+        }
+      ]
     },
     {
       "slug": "mausbot",
@@ -547,7 +902,15 @@
       },
       "folder": "teams/mausbot",
       "kind": "bot",
-      "main": "teams/mausbot/bot.md"
+      "main": "teams/mausbot/bot.md",
+      "avatars": [
+        {
+          "key": "social-card-studio",
+          "name": "Social Card Studio",
+          "color": "chrome",
+          "mascotBody": "cursor"
+        }
+      ]
     },
     {
       "slug": "mausbot-2",
@@ -567,7 +930,14 @@
       "folder": "teams/mausbot-2",
       "kind": "bot",
       "main": "teams/mausbot-2/bot.md",
-      "author": "OpenMausBot"
+      "author": "OpenMausBot",
+      "avatars": [
+        {
+          "key": "mausbot",
+          "name": "MausBot",
+          "color": "chrome"
+        }
+      ]
     },
     {
       "slug": "mausbot-3",
@@ -586,7 +956,14 @@
       },
       "folder": "teams/mausbot-3",
       "kind": "bot",
-      "main": "teams/mausbot-3/bot.md"
+      "main": "teams/mausbot-3/bot.md",
+      "avatars": [
+        {
+          "key": "mausbot",
+          "name": "MausBot",
+          "color": "chrome"
+        }
+      ]
     },
     {
       "slug": "mausbot-4",
@@ -605,7 +982,14 @@
       },
       "folder": "teams/mausbot-4",
       "kind": "bot",
-      "main": "teams/mausbot-4/bot.md"
+      "main": "teams/mausbot-4/bot.md",
+      "avatars": [
+        {
+          "key": "mausbot",
+          "name": "MausBot",
+          "color": "chrome"
+        }
+      ]
     },
     {
       "slug": "mausbot-5",
@@ -624,7 +1008,14 @@
       },
       "folder": "teams/mausbot-5",
       "kind": "bot",
-      "main": "teams/mausbot-5/bot.md"
+      "main": "teams/mausbot-5/bot.md",
+      "avatars": [
+        {
+          "key": "mausbot",
+          "name": "MausBot",
+          "color": "chrome"
+        }
+      ]
     },
     {
       "slug": "mausbot-6",
@@ -643,7 +1034,14 @@
       },
       "folder": "teams/mausbot-6",
       "kind": "bot",
-      "main": "teams/mausbot-6/bot.md"
+      "main": "teams/mausbot-6/bot.md",
+      "avatars": [
+        {
+          "key": "mausbot",
+          "name": "MausBot",
+          "color": "chrome"
+        }
+      ]
     },
     {
       "slug": "mausbot-7",
@@ -662,7 +1060,14 @@
       },
       "folder": "teams/mausbot-7",
       "kind": "bot",
-      "main": "teams/mausbot-7/bot.md"
+      "main": "teams/mausbot-7/bot.md",
+      "avatars": [
+        {
+          "key": "mausbot",
+          "name": "MausBot",
+          "color": "chrome"
+        }
+      ]
     },
     {
       "slug": "midia",
@@ -689,7 +1094,15 @@
       },
       "folder": "teams/midia",
       "kind": "bot",
-      "main": "teams/midia/bot.md"
+      "main": "teams/midia/bot.md",
+      "avatars": [
+        {
+          "key": "midia",
+          "name": "Midia",
+          "color": "purple",
+          "mascotBody": "obj-witch-hat"
+        }
+      ]
     },
     {
       "slug": "odyeeey",
@@ -739,7 +1152,14 @@
       },
       "folder": "teams/odyeeey",
       "kind": "bot",
-      "main": "teams/odyeeey/bot.md"
+      "main": "teams/odyeeey/bot.md",
+      "avatars": [
+        {
+          "key": "odyeeey",
+          "name": "Odyeeey",
+          "color": "chrome"
+        }
+      ]
     },
     {
       "slug": "phong-van-hanh-it",
@@ -766,7 +1186,31 @@
       },
       "folder": "teams/phong-van-hanh-it",
       "kind": "department",
-      "main": "teams/phong-van-hanh-it/team.md"
+      "main": "teams/phong-van-hanh-it/team.md",
+      "avatars": [
+        {
+          "key": "wordpress-webmaster",
+          "name": "WordPress Webmaster",
+          "color": "teal",
+          "mascotBody": "cursor"
+        },
+        {
+          "key": "security-specialist",
+          "name": "Security Specialist",
+          "color": "yellow"
+        },
+        {
+          "key": "network-specialist",
+          "name": "Network Specialist",
+          "color": "pink"
+        },
+        {
+          "key": "it",
+          "name": "IT",
+          "color": "cyan",
+          "mascotBody": "witch"
+        }
+      ]
     },
     {
       "slug": "phu-loc",
@@ -785,7 +1229,24 @@
       },
       "folder": "teams/phu-loc",
       "kind": "department",
-      "main": "teams/phu-loc/team.md"
+      "main": "teams/phu-loc/team.md",
+      "avatars": [
+        {
+          "key": "tro-ly-sales-cskh-a-kenh",
+          "name": "Trợ lý Sales – CSKH Đa kênh",
+          "color": "orange"
+        },
+        {
+          "key": "tro-ly-san-pham-tri-thuc",
+          "name": "Trợ lý Sản phẩm & Tri thức",
+          "color": "red"
+        },
+        {
+          "key": "tro-ly-ceo-phu-loc",
+          "name": "Trợ lý CEO Phú Lộc",
+          "color": "blue"
+        }
+      ]
     },
     {
       "slug": "proxy-validator",
@@ -804,7 +1265,14 @@
       },
       "folder": "teams/proxy-validator",
       "kind": "bot",
-      "main": "teams/proxy-validator/bot.md"
+      "main": "teams/proxy-validator/bot.md",
+      "avatars": [
+        {
+          "key": "proxy-validator",
+          "name": "proxy-validator",
+          "color": "coral"
+        }
+      ]
     },
     {
       "slug": "quan-gia",
@@ -823,7 +1291,15 @@
       },
       "folder": "teams/quan-gia",
       "kind": "bot",
-      "main": "teams/quan-gia/bot.md"
+      "main": "teams/quan-gia/bot.md",
+      "avatars": [
+        {
+          "key": "quan-gia",
+          "name": "Quản gia",
+          "color": "green",
+          "mascotBody": "vampire"
+        }
+      ]
     },
     {
       "slug": "selma",
@@ -842,7 +1318,15 @@
       },
       "folder": "teams/selma",
       "kind": "bot",
-      "main": "teams/selma/bot.md"
+      "main": "teams/selma/bot.md",
+      "avatars": [
+        {
+          "key": "selma",
+          "name": "Selma",
+          "color": "chrome",
+          "mascotExpression": "happy"
+        }
+      ]
     },
     {
       "slug": "seo-growth-2",
@@ -872,7 +1356,33 @@
       },
       "folder": "teams/seo-growth-2",
       "kind": "department",
-      "main": "teams/seo-growth-2/team.md"
+      "main": "teams/seo-growth-2/team.md",
+      "avatars": [
+        {
+          "key": "quill",
+          "name": "Quill",
+          "color": "coral",
+          "mascotExpression": "happy"
+        },
+        {
+          "key": "atlas",
+          "name": "Atlas",
+          "color": "blue",
+          "mascotExpression": "thinking"
+        },
+        {
+          "key": "scout",
+          "name": "Scout",
+          "color": "cyan",
+          "mascotExpression": "curious"
+        },
+        {
+          "key": "nova",
+          "name": "saf",
+          "color": "purple",
+          "mascotExpression": "focused"
+        }
+      ]
     },
     {
       "slug": "sm",
@@ -895,7 +1405,15 @@
       },
       "folder": "teams/sm",
       "kind": "bot",
-      "main": "teams/sm/bot.md"
+      "main": "teams/sm/bot.md",
+      "avatars": [
+        {
+          "key": "sm",
+          "name": "SM",
+          "color": "chrome",
+          "mascotBody": "cursor"
+        }
+      ]
     },
     {
       "slug": "social-design-studio",
@@ -916,7 +1434,14 @@
       },
       "folder": "teams/social-design-studio",
       "kind": "bot",
-      "main": "teams/social-design-studio/bot.md"
+      "main": "teams/social-design-studio/bot.md",
+      "avatars": [
+        {
+          "key": "social-design-studio",
+          "name": "Social Design Studio",
+          "color": "green"
+        }
+      ]
     },
     {
       "slug": "studio",
@@ -935,7 +1460,15 @@
       },
       "folder": "teams/studio",
       "kind": "bot",
-      "main": "teams/studio/bot.md"
+      "main": "teams/studio/bot.md",
+      "avatars": [
+        {
+          "key": "studio",
+          "name": "Studio",
+          "color": "cyan",
+          "picture": "teams/studio/avatars/studio.png"
+        }
+      ]
     },
     {
       "slug": "swiggy",
@@ -954,7 +1487,15 @@
       },
       "folder": "teams/swiggy",
       "kind": "bot",
-      "main": "teams/swiggy/bot.md"
+      "main": "teams/swiggy/bot.md",
+      "avatars": [
+        {
+          "key": "swiggy",
+          "name": "Swiggy",
+          "color": "orange",
+          "mascotBody": "shield"
+        }
+      ]
     },
     {
       "slug": "team",
@@ -981,7 +1522,15 @@
       },
       "folder": "teams/team",
       "kind": "bot",
-      "main": "teams/team/bot.md"
+      "main": "teams/team/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "阿奇",
+          "color": "blue",
+          "mascotBody": "ghost"
+        }
+      ]
     },
     {
       "slug": "team-10",
@@ -1012,7 +1561,20 @@
       },
       "folder": "teams/team-10",
       "kind": "department",
-      "main": "teams/team-10/team.md"
+      "main": "teams/team-10/team.md",
+      "avatars": [
+        {
+          "key": "flink",
+          "name": "Flink数据清洗工程师",
+          "color": "teal"
+        },
+        {
+          "key": "bi",
+          "name": "BI数据工程师",
+          "color": "blue",
+          "mascotBody": "squircle"
+        }
+      ]
     },
     {
       "slug": "team-11",
@@ -1035,7 +1597,14 @@
       },
       "folder": "teams/team-11",
       "kind": "bot",
-      "main": "teams/team-11/bot.md"
+      "main": "teams/team-11/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "小鱼泡",
+          "color": "blue"
+        }
+      ]
     },
     {
       "slug": "team-12",
@@ -1054,7 +1623,15 @@
       },
       "folder": "teams/team-12",
       "kind": "bot",
-      "main": "teams/team-12/bot.md"
+      "main": "teams/team-12/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "论文助手",
+          "color": "red",
+          "mascotBody": "cursor"
+        }
+      ]
     },
     {
       "slug": "team-13",
@@ -1073,7 +1650,14 @@
       },
       "folder": "teams/team-13",
       "kind": "bot",
-      "main": "teams/team-13/bot.md"
+      "main": "teams/team-13/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "قائد سلسلة الكتب",
+          "color": "yellow"
+        }
+      ]
     },
     {
       "slug": "team-14",
@@ -1092,7 +1676,14 @@
       },
       "folder": "teams/team-14",
       "kind": "bot",
-      "main": "teams/team-14/bot.md"
+      "main": "teams/team-14/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "办公助理",
+          "color": "purple"
+        }
+      ]
     },
     {
       "slug": "team-15",
@@ -1114,7 +1705,24 @@
       },
       "folder": "teams/team-15",
       "kind": "department",
-      "main": "teams/team-15/team.md"
+      "main": "teams/team-15/team.md",
+      "avatars": [
+        {
+          "key": "sage",
+          "name": "Sage（风险分析）",
+          "color": "coral"
+        },
+        {
+          "key": "orion",
+          "name": "Orion（数据质量）",
+          "color": "teal"
+        },
+        {
+          "key": "vega",
+          "name": "Vega（决策负责人）",
+          "color": "yellow"
+        }
+      ]
     },
     {
       "slug": "team-16",
@@ -1133,7 +1741,15 @@
       },
       "folder": "teams/team-16",
       "kind": "bot",
-      "main": "teams/team-16/bot.md"
+      "main": "teams/team-16/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "宰相",
+          "color": "chrome",
+          "mascotBody": "monster"
+        }
+      ]
     },
     {
       "slug": "team-2",
@@ -1152,7 +1768,16 @@
       },
       "folder": "teams/team-2",
       "kind": "bot",
-      "main": "teams/team-2/bot.md"
+      "main": "teams/team-2/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "落地官",
+          "color": "pink",
+          "mascotBody": "chakri",
+          "mascotExpression": "curious"
+        }
+      ]
     },
     {
       "slug": "team-3",
@@ -1173,7 +1798,16 @@
       },
       "folder": "teams/team-3",
       "kind": "bot",
-      "main": "teams/team-3/bot.md"
+      "main": "teams/team-3/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "视频制作专家",
+          "color": "orange",
+          "mascotBody": "pumpkin",
+          "mascotExpression": "proud"
+        }
+      ]
     },
     {
       "slug": "team-4",
@@ -1198,7 +1832,14 @@
       },
       "folder": "teams/team-4",
       "kind": "bot",
-      "main": "teams/team-4/bot.md"
+      "main": "teams/team-4/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "董事长",
+          "color": "chrome"
+        }
+      ]
     },
     {
       "slug": "team-5",
@@ -1217,7 +1858,14 @@
       },
       "folder": "teams/team-5",
       "kind": "bot",
-      "main": "teams/team-5/bot.md"
+      "main": "teams/team-5/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "小测",
+          "color": "orange"
+        }
+      ]
     },
     {
       "slug": "team-6",
@@ -1236,7 +1884,16 @@
       },
       "folder": "teams/team-6",
       "kind": "bot",
-      "main": "teams/team-6/bot.md"
+      "main": "teams/team-6/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "ทีนาย",
+          "color": "purple",
+          "mascotBody": "vampire",
+          "mascotExpression": "idle"
+        }
+      ]
     },
     {
       "slug": "team-7",
@@ -1255,7 +1912,14 @@
       },
       "folder": "teams/team-7",
       "kind": "bot",
-      "main": "teams/team-7/bot.md"
+      "main": "teams/team-7/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "投资数据专员",
+          "color": "green"
+        }
+      ]
     },
     {
       "slug": "team-8",
@@ -1274,7 +1938,14 @@
       },
       "folder": "teams/team-8",
       "kind": "bot",
-      "main": "teams/team-8/bot.md"
+      "main": "teams/team-8/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "知源",
+          "color": "cyan"
+        }
+      ]
     },
     {
       "slug": "team-9",
@@ -1299,7 +1970,16 @@
       },
       "folder": "teams/team-9",
       "kind": "bot",
-      "main": "teams/team-9/bot.md"
+      "main": "teams/team-9/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "量化助手",
+          "color": "yellow",
+          "mascotBody": "pumpkin",
+          "mascotExpression": "curious"
+        }
+      ]
     },
     {
       "slug": "video-repurposing",
@@ -1322,10 +2002,26 @@
           "Google Drive"
         ]
       },
-      "folder": "teams/video-repurposing",
       "kind": "department",
       "main": "teams/video-repurposing/team.md",
-      "author": "LiveCore AI"
+      "author": "LiveCore AI",
+      "avatars": [
+        {
+          "key": "producer",
+          "name": "Producer",
+          "color": "purple"
+        },
+        {
+          "key": "clip-editor",
+          "name": "Clip Editor",
+          "color": "cyan"
+        },
+        {
+          "key": "finisher",
+          "name": "Motion & Brand Finisher",
+          "color": "orange"
+        }
+      ]
     },
     {
       "slug": "ziggy",
@@ -1359,7 +2055,15 @@
       },
       "folder": "teams/ziggy",
       "kind": "bot",
-      "main": "teams/ziggy/bot.md"
+      "main": "teams/ziggy/bot.md",
+      "avatars": [
+        {
+          "key": "ziggy",
+          "name": "Ziggy",
+          "color": "blue",
+          "mascotBody": "cursor"
+        }
+      ]
     }
   ]
 }

@@ -242,10 +242,18 @@ if (!catalog || catalog.format !== "openmaus.catalog" || catalog.version !== 1 |
   // Older apps refuse a catalog of more than 100 teams outright.
   if (catalog.teams.length > 100) fail(`catalog.json: ${catalog.teams.length} teams; older apps read at most 100`);
   for (const team of catalog.teams) {
-    const generated = team.folder !== undefined;
-    if (generated && (team.folder !== `teams/${team.slug}` || !mainFile(root, team.slug))) {
+    const generated = team.main !== undefined;
+    if (generated && (!mainFile(root, team.slug) || team.main !== `teams/${team.slug}/${mainFile(root, team.slug)}`
+      || (team.folder !== undefined && team.folder !== `teams/${team.slug}`))) {
       fail(`catalog.json: ${team.slug} is marked as a template folder, but teams/${team.slug} has no team.md or bot.md`);
       continue;
+    }
+    if (!generated && team.folder !== undefined) fail(`catalog.json: ${team.slug} lists a folder but no main file`);
+    // The gallery's faces: one per bot, each a colour and optionally a mascot and a picture inside the team's folder.
+    if (!Array.isArray(team.avatars) || team.avatars.length > 200 || team.avatars.some((face) => !text(face?.key, 64) || !text(face?.name, 100)
+      || !text(face?.color, 40) || (face.picture !== undefined && (typeof face.picture !== "string"
+        || !face.picture.startsWith(`teams/${team.slug}/avatars/`) || !/\/[a-z0-9][a-z0-9_-]{0,63}\.(?:webp|png|jpg)$/.test(face.picture) || !safeFile(face.picture, ""))))) {
+      fail(`catalog.json: ${team.slug} has invalid avatars`);
     }
     if (!text(team.slug, 80) || !/^[a-z0-9][a-z0-9-]*$/.test(team.slug)) fail("catalog.json: invalid team slug");
     else if (slugs.has(team.slug)) fail(`catalog.json: duplicate slug ${team.slug}`);
@@ -270,7 +278,7 @@ if (!catalog || catalog.format !== "openmaus.catalog" || catalog.version !== 1 |
   const folders = readdirSync(join(root, "teams"), { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
     .map((entry) => entry.name);
-  const legacySlugs = new Set(catalog.teams.filter((team) => team.folder === undefined).map((team) => team.slug));
+  const legacySlugs = new Set(catalog.teams.filter((team) => team.main === undefined).map((team) => team.slug));
   let templates = 0;
   for (const folder of folders) {
     if (mainFile(root, folder)) {
