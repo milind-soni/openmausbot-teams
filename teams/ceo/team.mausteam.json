@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Ceo",
+    "description": "協助規劃、執行與協調各領域工作，聚焦長期目標與每日進展。",
+    "members": [
+      {
+        "key": "ceo",
+        "name": "Ceo",
+        "title": "個人 AI 幕僚長",
+        "description": "協助規劃、執行與協調各領域工作，聚焦長期目標與每日進展。",
+        "appearance": {
+          "color": "orange"
+        }
+      }
+    ],
+    "room": {
+      "name": "Ceo Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

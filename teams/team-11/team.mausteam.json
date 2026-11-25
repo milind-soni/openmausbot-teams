@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "小鱼泡",
+    "description": "一个中文优先的个人助理兼总管家：会用中文对话，能检查机器人系统健康、清理无用缓存、接入聊天/决策/语音模型，也能在你授权下操作桌面完成实际任务。附带三个可直接复用的技能。",
+    "members": [
+      {
+        "key": "bot-1",
+        "name": "小鱼泡",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "小鱼泡 Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

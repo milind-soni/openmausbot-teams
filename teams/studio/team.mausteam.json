@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Studio",
+    "description": "Shared from MausBot. The bot arrives as a new copy with its skills and routines; routines start paused and chat history never travels.",
+    "members": [
+      {
+        "key": "studio",
+        "name": "Studio",
+        "title": "AI Studio · Thiết kế & Video (phần hình)",
+        "description": "",
+        "appearance": {
+          "color": "cyan"
+        }
+      }
+    ],
+    "room": {
+      "name": "Studio Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

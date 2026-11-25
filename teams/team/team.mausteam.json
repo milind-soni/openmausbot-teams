@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "阿奇",
+    "description": "你的主要对话窗口：事找我，我再转派给别人。",
+    "members": [
+      {
+        "key": "bot-1",
+        "name": "阿奇",
+        "title": "幕僚长",
+        "description": "你的主要对话窗口：事找我，我再转派给别人。",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "阿奇 Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

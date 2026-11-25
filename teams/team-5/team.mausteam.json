@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "小测",
+    "description": "一个只读的 SmartBI 报表测试分身：做 V10/V11 对比测试、回归测试和可复现的问题记录，不改数据、不改报表。",
+    "members": [
+      {
+        "key": "bot-1",
+        "name": "小测",
+        "title": "SmartBI 报表测试（V10/V11 对比 / 回归 / 问题记录）",
+        "description": "只读的 SmartBI 报表测试分身：做 V10/V11 对比、回归测试与可复现的问题记录，不改数据、不改报表。",
+        "appearance": {
+          "color": "orange"
+        }
+      }
+    ],
+    "room": {
+      "name": "小测 Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

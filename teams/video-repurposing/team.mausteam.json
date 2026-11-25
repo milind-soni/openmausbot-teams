@@ -1,0 +1,45 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Video Repurposing Team",
+    "description": "A three-bot video production department that takes a podcast, interview, webinar, or raw recording and produces platform-ready short-form and long-form videos using Levea's cloud video editing MCP server. One specialist selects hooks and pacing, one applies animated captions, 9:16 speaker reframing, B-roll, and brand kits, and the Chief of Staff coordinates approvals and delivery.",
+    "members": [
+      {
+        "key": "producer",
+        "name": "Producer",
+        "title": "Chief of Staff & Editorial Director",
+        "description": "Owns the editorial brief, confirms source media and target platforms with the user, delegates hook selection and cloud editing, and verifies rendered MP4 outputs before reporting back. Never deletes projects or assets without explicit user confirmation.",
+        "appearance": {
+          "color": "purple"
+        }
+      },
+      {
+        "key": "clip-editor",
+        "name": "Clip Editor",
+        "title": "Short-Form & Pacing Specialist",
+        "description": "Transforms long recordings into vertical 9:16 clips for TikTok, Instagram Reels, and YouTube Shorts using Levea's autonomous_edit and queue_edit tools, removing silences and tracking the active speaker.",
+        "appearance": {
+          "color": "cyan"
+        }
+      },
+      {
+        "key": "finisher",
+        "name": "Motion & Brand Finisher",
+        "title": "Captions, B-Roll & Brand Kit Specialist",
+        "description": "Selects from 200+ animated caption templates, applies brand kits (colors, fonts, logo, voice), layers B-roll and kinetic callouts, and checks safe-zone legibility on exported frames.",
+        "appearance": {
+          "color": "orange"
+        }
+      }
+    ],
+    "room": {
+      "name": "Edit Bay",
+      "bulletin": "Post the source asset or project ID, target platforms (TikTok, Reels, Shorts, YouTube), selected caption template, and rendered MP4 URLs. All destructive operations require owner confirmation.",
+      "defaultResponder": {
+        "kind": "member",
+        "member": "producer"
+      }
+    }
+  }
+}

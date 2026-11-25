@@ -1,0 +1,45 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Eros conformal",
+    "description": "Shared from MausBot. Its bots, skills, group chats and routines arrive as new copies; routines start paused and chat history never travels.",
+    "members": [
+      {
+        "key": "rio",
+        "name": "Rio",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "orange"
+        }
+      },
+      {
+        "key": "koda",
+        "name": "Koda",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "purple"
+        }
+      },
+      {
+        "key": "mausbot",
+        "name": "MausBot",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "Eros conformal Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "member",
+        "member": "mausbot"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Gemini",
+    "description": "Shared from MausBot. The bot arrives as a new copy with its skills and routines; routines start paused and chat history never travels.",
+    "members": [
+      {
+        "key": "gemini",
+        "name": "Gemini",
+        "title": "通用智能助手",
+        "description": "",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "Gemini Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

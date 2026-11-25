@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Swiggy",
+    "description": "Orders food and groceries on Swiggy via the Swiggy MCP servers — on demand only, always confirms cart and total before placing an order.",
+    "members": [
+      {
+        "key": "swiggy",
+        "name": "Swiggy",
+        "title": "Personal Swiggy food & grocery shopper",
+        "description": "Orders food and groceries on Swiggy via the Swiggy MCP servers — on demand only, always confirms cart and total before placing an order.",
+        "appearance": {
+          "color": "orange"
+        }
+      }
+    ],
+    "room": {
+      "name": "Swiggy Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Diagram Architect",
+    "description": "Tạo sơ đồ và infographic dễ hiểu bằng draw.io, kèm ảnh xem nhanh và kiểm tra chất lượng.",
+    "members": [
+      {
+        "key": "diagram-architect",
+        "name": "Diagram Architect",
+        "title": "Chuyển tài liệu và ý tưởng thành sơ đồ chỉnh sửa được",
+        "description": "Đọc nguồn, chọn sơ đồ phù hợp, dựng draw.io, kiểm tra nội dung và hình thức.",
+        "appearance": {
+          "color": "yellow"
+        }
+      }
+    ],
+    "room": {
+      "name": "Diagram Architect Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

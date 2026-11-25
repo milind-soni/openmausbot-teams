@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "MausBot",
+    "description": "Research, organize information, write code, and coordinate work with concise answers and verified results. Each person connects their own accounts.",
+    "members": [
+      {
+        "key": "mausbot",
+        "name": "MausBot",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "MausBot Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

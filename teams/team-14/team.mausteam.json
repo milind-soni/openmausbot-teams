@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "办公助理",
+    "description": "负责 Excel、PPT、Word 文档制作与整理，包括数据清洗、公式图表、演示文稿美化、文档排版和批量处理；交付前检查文件并附上成品。",
+    "members": [
+      {
+        "key": "bot-1",
+        "name": "办公助理",
+        "title": "Excel/PPT/Word 文档处理",
+        "description": "负责 Excel、PPT、Word 文档制作与整理，包括数据清洗、公式图表、演示文稿美化、文档排版和批量处理；交付前检查文件并附上成品。",
+        "appearance": {
+          "color": "purple"
+        }
+      }
+    ],
+    "room": {
+      "name": "办公助理 Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

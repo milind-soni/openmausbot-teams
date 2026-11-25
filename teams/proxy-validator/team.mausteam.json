@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "proxy-validator",
+    "description": "Especialista em validação, teste de conectividade, medição de latência e filtragem de proxies (HTTP, SOCKS4, SOCKS5).",
+    "members": [
+      {
+        "key": "proxy-validator",
+        "name": "proxy-validator",
+        "title": "Proxy Validator",
+        "description": "Especialista em validação, teste de conectividade, medição de latência e filtragem de proxies (HTTP, SOCKS4, SOCKS5).",
+        "appearance": {
+          "color": "coral"
+        }
+      }
+    ],
+    "room": {
+      "name": "proxy-validator Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

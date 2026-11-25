@@ -1,0 +1,27 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "量化助手",
+    "description": "Turn data and research questions into verifiable results, readable code, and clear deliverables.",
+    "members": [
+      {
+        "key": "bot-1",
+        "name": "量化助手",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "yellow",
+          "mascotExpression": "curious"
+        }
+      }
+    ],
+    "room": {
+      "name": "量化助手 Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

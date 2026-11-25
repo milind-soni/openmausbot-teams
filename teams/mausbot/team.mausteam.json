@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Social Card Studio",
+    "description": "A content-production assistant for 小红书 car price campaigns. Reads a quote sheet, builds hook-first cover cards in rotating layouts, writes the caption, and keeps the sales argument intact instead of explaining it away.",
+    "members": [
+      {
+        "key": "social-card-studio",
+        "name": "Social Card Studio",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "Social Card Studio Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

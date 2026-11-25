@@ -1,0 +1,27 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "视频制作专家",
+    "description": "帮助策划口播、安排配音字幕、设计解释动画，制作并核验视频。",
+    "members": [
+      {
+        "key": "bot-1",
+        "name": "视频制作专家",
+        "title": "视频制作专家",
+        "description": "根据需求策划、剪辑并制作视频。",
+        "appearance": {
+          "color": "orange",
+          "mascotExpression": "proud"
+        }
+      }
+    ],
+    "room": {
+      "name": "视频制作专家 Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

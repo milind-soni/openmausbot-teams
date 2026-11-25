@@ -1,0 +1,27 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Selma",
+    "description": "A single point of contact who turns your priorities into clear assignments and reports verified results.",
+    "members": [
+      {
+        "key": "selma",
+        "name": "Selma",
+        "title": "Chief of Staff",
+        "description": "Turns priorities into assignments, coordinates team leads, and reports verified results.",
+        "appearance": {
+          "color": "blue",
+          "mascotExpression": "happy"
+        }
+      }
+    ],
+    "room": {
+      "name": "Selma Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

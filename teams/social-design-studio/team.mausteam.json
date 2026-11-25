@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Social Design Studio",
+    "description": "Biến brief và nội dung thành ảnh social, carousel, cover, banner, story và thumbnail; bàn giao ảnh xem trước cùng nguồn chỉnh sửa khi công cụ hỗ trợ, để người dùng duyệt trước khi đăng.",
+    "members": [
+      {
+        "key": "social-design-studio",
+        "name": "Social Design Studio",
+        "title": "Chuyên gia thiết kế ấn phẩm mạng xã hội",
+        "description": "Biến brief và nội dung thành ảnh social, carousel, cover, banner, story và thumbnail; bàn giao ảnh xem trước cùng nguồn chỉnh sửa khi công cụ hỗ trợ, để người dùng duyệt trước khi đăng.",
+        "appearance": {
+          "color": "green"
+        }
+      }
+    ],
+    "room": {
+      "name": "Social Design Studio Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

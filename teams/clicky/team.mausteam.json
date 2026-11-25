@@ -1,0 +1,27 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Clicky",
+    "description": "Organize your day, set up automations, and coordinate your bots.",
+    "members": [
+      {
+        "key": "clicky",
+        "name": "Clicky",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "blue",
+          "mascotExpression": "curious"
+        }
+      }
+    ],
+    "room": {
+      "name": "Clicky Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

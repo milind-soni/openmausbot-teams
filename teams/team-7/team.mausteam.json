@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "投资数据专员",
+    "description": "负责A股数据源接入、抓取、更新、质量校验和持久存储；每个交易日收盘后更新非ST沪深主板全股票数据。",
+    "members": [
+      {
+        "key": "bot-1",
+        "name": "投资数据专员",
+        "title": "A股数据采集、更新与存储",
+        "description": "负责A股数据源接入、抓取、更新、质量校验和持久存储；每个交易日收盘后更新非ST沪深主板全股票数据。",
+        "appearance": {
+          "color": "green"
+        }
+      }
+    ],
+    "room": {
+      "name": "投资数据专员 Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

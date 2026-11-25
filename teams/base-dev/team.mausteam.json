@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "BASE - DEV",
+    "description": "Transforma título e descrição breve de qualquer produto em pacotes completos de anúncio de alta conversão para a Basefy (14 campos prontos para copiar e publicar).",
+    "members": [
+      {
+        "key": "base-dev",
+        "name": "BASE - DEV",
+        "title": "Especialista em Anúncios de Alta Conversão (Basefy)",
+        "description": "Transforma título e descrição breve de qualquer produto em pacotes completos de anúncio de alta conversão para a Basefy (14 campos prontos para copiar e publicar).",
+        "appearance": {
+          "color": "purple"
+        }
+      }
+    ],
+    "room": {
+      "name": "BASE - DEV Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

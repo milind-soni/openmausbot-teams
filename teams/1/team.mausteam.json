@@ -1,0 +1,27 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "1",
+    "description": "Shared from MausBot. The bot arrives as a new copy with its skills and routines; routines start paused and chat history never travels.",
+    "members": [
+      {
+        "key": "1",
+        "name": "1",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "red",
+          "mascotExpression": "curious"
+        }
+      }
+    ],
+    "room": {
+      "name": "1 Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

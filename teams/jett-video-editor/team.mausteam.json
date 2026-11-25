@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Jett — Video Editor",
+    "description": "Turn recordings into editable first cuts, review videos, captions, and timestamped chapter notes.",
+    "members": [
+      {
+        "key": "jett-video-editor",
+        "name": "Jett — Video Editor",
+        "title": "Video Editor",
+        "description": "Local editing assistant for talking-head videos, tutorials, demos, and short-form clips.",
+        "appearance": {
+          "color": "green"
+        }
+      }
+    ],
+    "room": {
+      "name": "Jett — Video Editor Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

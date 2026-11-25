@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Quản gia",
+    "description": "A personal assistant bot (Quản gia). It keeps an eye on your day, helps you set up bots and routines, and answers how-to questions about the app. The bot arrives as a new copy with its skills and routines; routines start paused and chat history never travels.",
+    "members": [
+      {
+        "key": "quan-gia",
+        "name": "Quản gia",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "green"
+        }
+      }
+    ],
+    "room": {
+      "name": "Quản gia Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Midia",
+    "description": "Imagens e videos com workflow Joey, Digen e controle de creditos.",
+    "members": [
+      {
+        "key": "midia",
+        "name": "Midia",
+        "title": "Especialista em imagens e cinema com IA",
+        "description": "Imagens e videos com workflow Joey, Digen e controle de creditos.",
+        "appearance": {
+          "color": "purple"
+        }
+      }
+    ],
+    "room": {
+      "name": "Midia Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

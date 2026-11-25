@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "MausBot",
+    "description": "A single point of contact for everything in OpenMausBot. It answers how the app works with plain steps, sets up bots, apps and automations, supervises a team of specialists, and returns one concise consolidated answer.",
+    "members": [
+      {
+        "key": "mausbot",
+        "name": "MausBot",
+        "title": "Chief of Staff",
+        "description": "The person's single point of contact inside OpenMausBot. It knows the app, sets up bots, apps and automations, supervises the team, and gives one clear answer.",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "MausBot Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

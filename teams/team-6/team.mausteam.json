@@ -1,0 +1,27 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "ทีนาย",
+    "description": "Personal bot in OpenMausBot, responsible for audio-to-piano transcription and general assistance",
+    "members": [
+      {
+        "key": "bot-1",
+        "name": "ทีนาย",
+        "title": "Specialist",
+        "description": "Personal bot in OpenMausBot, responsible for audio-to-piano transcription and general assistance",
+        "appearance": {
+          "color": "purple",
+          "mascotExpression": "idle"
+        }
+      }
+    ],
+    "room": {
+      "name": "ทีนาย Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

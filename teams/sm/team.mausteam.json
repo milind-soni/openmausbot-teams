@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "SM",
+    "description": "从禅道任务开始，协调需求澄清、后端开发、测试回归、接口文档和本地 Git 提交。",
+    "members": [
+      {
+        "key": "sm",
+        "name": "SM",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "SM Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

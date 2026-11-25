@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "董事长",
+    "description": "单 bot 的幕僚长模板。先给结论，再把活分给有专长的 bot，独立复核后才汇报；记忆用纯 markdown 存在本地，聊天记录、密钥和个人资料都不随模板走。",
+    "members": [
+      {
+        "key": "bot-1",
+        "name": "董事长",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "董事长 Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

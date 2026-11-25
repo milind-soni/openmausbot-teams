@@ -1,0 +1,27 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Maus包工头主管",
+    "description": "Shared from OpenMausBot. Bots, skills, group chats and routines arrive as new copies; routines start paused and chat history never travels.",
+    "members": [
+      {
+        "key": "maus",
+        "name": "Maus包工头主管",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "coral",
+          "mascotExpression": "happy"
+        }
+      }
+    ],
+    "room": {
+      "name": "Maus包工头主管 Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

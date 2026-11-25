@@ -1,0 +1,54 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Phòng Vận Hành IT",
+    "description": "Shared from MausBot. Its bots, skills, group chats and routines arrive as new copies; routines start paused and chat history never travels.",
+    "members": [
+      {
+        "key": "wordpress-webmaster",
+        "name": "WordPress Webmaster",
+        "title": "Chuyên viên Quản trị Website WordPress",
+        "description": "",
+        "appearance": {
+          "color": "teal"
+        }
+      },
+      {
+        "key": "security-specialist",
+        "name": "Security Specialist",
+        "title": "Chuyên viên Bảo mật & An ninh mạng",
+        "description": "",
+        "appearance": {
+          "color": "yellow"
+        }
+      },
+      {
+        "key": "network-specialist",
+        "name": "Network Specialist",
+        "title": "Chuyên viên Mạng & Hạ tầng",
+        "description": "",
+        "appearance": {
+          "color": "pink"
+        }
+      },
+      {
+        "key": "it",
+        "name": "IT",
+        "title": "Trưởng phòng Vận hành IT",
+        "description": "Trưởng phòng Vận hành IT phụ trách hạ tầng mạng, bảo mật doanh nghiệp cho MSH Group, Megan Holding và quản trị website WordPress.",
+        "appearance": {
+          "color": "cyan"
+        }
+      }
+    ],
+    "room": {
+      "name": "Phòng IT",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "member",
+        "member": "it"
+      }
+    }
+  }
+}

@@ -182,6 +182,1180 @@
       "requires": {
         "apps": []
       }
+    },
+    {
+      "slug": "1",
+      "name": "1",
+      "summary": "A bot shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/1.md",
+      "manifest": "teams/1/team.mausteam.json",
+      "readme": "teams/1/README.md",
+      "members": 1,
+      "skills": [
+        "teams/1/skills/agent-desktop/SKILL.md",
+        "teams/1/skills/caveman/SKILL.md",
+        "teams/1/skills/deploy-model/SKILL.md",
+        "teams/1/skills/disk-cleanup/SKILL.md",
+        "teams/1/skills/microsoft-foundry/SKILL.md",
+        "teams/1/skills/remotion-best-practices/SKILL.md",
+        "teams/1/skills/scrapling-official/SKILL.md",
+        "teams/1/skills/software-factory/SKILL.md",
+        "teams/1/skills/web-artifacts-builder/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/1",
+      "kind": "bot",
+      "main": "teams/1/bot.md"
+    },
+    {
+      "slug": "ai-media-studio",
+      "name": "AI Media Studio",
+      "summary": "Turn a brief into finished images and short videos, with every paid generation approved first.",
+      "category": "Creative",
+      "outcome": "Get on-brief images and short videos from one plain-language request",
+      "setupMinutes": 5,
+      "package": "packages/ai-media-studio.md",
+      "manifest": "teams/ai-media-studio/team.mausteam.json",
+      "readme": "teams/ai-media-studio/README.md",
+      "members": 1,
+      "skills": [
+        "teams/ai-media-studio/skills/image-generation/SKILL.md",
+        "teams/ai-media-studio/skills/video-generation/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "MuAPI"
+        ]
+      },
+      "folder": "teams/ai-media-studio",
+      "kind": "bot",
+      "main": "teams/ai-media-studio/bot.md"
+    },
+    {
+      "slug": "atlas",
+      "name": "Atlas",
+      "summary": "AI Agent 导师（带学员从前端转成全栈 AI Agent 工程师）",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/atlas.md",
+      "manifest": "teams/atlas/team.mausteam.json",
+      "readme": "teams/atlas/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/atlas",
+      "kind": "bot",
+      "main": "teams/atlas/bot.md"
+    },
+    {
+      "slug": "base-dev",
+      "name": "BASE - DEV",
+      "summary": "Especialista em Anúncios de Alta Conversão (Basefy)",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/base-dev.md",
+      "manifest": "teams/base-dev/team.mausteam.json",
+      "readme": "teams/base-dev/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/base-dev",
+      "kind": "bot",
+      "main": "teams/base-dev/bot.md"
+    },
+    {
+      "slug": "ceo",
+      "name": "Ceo",
+      "summary": "個人 AI 幕僚長",
+      "category": "Community",
+      "outcome": "提供可自行設定目標與日常節奏的個人 AI 幕僚長。",
+      "setupMinutes": 2,
+      "package": "packages/ceo.md",
+      "manifest": "teams/ceo/team.mausteam.json",
+      "readme": "teams/ceo/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/ceo",
+      "kind": "bot",
+      "main": "teams/ceo/bot.md"
+    },
+    {
+      "slug": "clicky",
+      "name": "Clicky",
+      "summary": "A practical personal assistant for OpenMausBot.",
+      "category": "Community",
+      "outcome": "Get a concise overview of your day and pending work.",
+      "setupMinutes": 2,
+      "package": "packages/clicky.md",
+      "manifest": "teams/clicky/team.mausteam.json",
+      "readme": "teams/clicky/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/clicky",
+      "kind": "bot",
+      "main": "teams/clicky/bot.md"
+    },
+    {
+      "slug": "daily-ai-news-report",
+      "name": "Daily AI News Report",
+      "summary": "A bot shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/daily-ai-news-report.md",
+      "manifest": "teams/daily-ai-news-report/team.mausteam.json",
+      "readme": "teams/daily-ai-news-report/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/daily-ai-news-report",
+      "kind": "bot",
+      "main": "teams/daily-ai-news-report/bot.md"
+    },
+    {
+      "slug": "diagram-architect",
+      "name": "Diagram Architect",
+      "summary": "Chuyển tài liệu và ý tưởng thành sơ đồ chỉnh sửa được",
+      "category": "Community",
+      "outcome": "File draw.io chỉnh sửa từng thành phần và PNG hoặc SVG khi môi trường hỗ trợ.",
+      "setupMinutes": 2,
+      "package": "packages/diagram-architect.md",
+      "manifest": "teams/diagram-architect/team.mausteam.json",
+      "readme": "teams/diagram-architect/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/diagram-architect",
+      "kind": "bot",
+      "main": "teams/diagram-architect/bot.md"
+    },
+    {
+      "slug": "eros-conformal",
+      "name": "Eros conformal",
+      "summary": "A department shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 3,
+      "package": "packages/eros-conformal.md",
+      "manifest": "teams/eros-conformal/team.mausteam.json",
+      "readme": "teams/eros-conformal/README.md",
+      "members": 3,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/eros-conformal",
+      "kind": "department",
+      "main": "teams/eros-conformal/team.md"
+    },
+    {
+      "slug": "gemini",
+      "name": "Gemini",
+      "summary": "通用智能助手",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/gemini.md",
+      "manifest": "teams/gemini/team.mausteam.json",
+      "readme": "teams/gemini/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/gemini",
+      "kind": "bot",
+      "main": "teams/gemini/bot.md"
+    },
+    {
+      "slug": "jarvis",
+      "name": "Jarvis",
+      "summary": "A bot shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/jarvis.md",
+      "manifest": "teams/jarvis/team.mausteam.json",
+      "readme": "teams/jarvis/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/jarvis",
+      "kind": "bot",
+      "main": "teams/jarvis/bot.md"
+    },
+    {
+      "slug": "jett-video-editor",
+      "name": "Jett — Video Editor",
+      "summary": "Local video editing from source footage to first cut",
+      "category": "Community",
+      "outcome": "Preserve source recordings and create a separate editable cut.",
+      "setupMinutes": 2,
+      "package": "packages/jett-video-editor.md",
+      "manifest": "teams/jett-video-editor/team.mausteam.json",
+      "readme": "teams/jett-video-editor/README.md",
+      "members": 1,
+      "skills": [
+        "teams/jett-video-editor/skills/local-video-editing/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/jett-video-editor",
+      "kind": "bot",
+      "main": "teams/jett-video-editor/bot.md"
+    },
+    {
+      "slug": "kimon",
+      "name": "Kimon",
+      "summary": "A bot shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/kimon.md",
+      "manifest": "teams/kimon/team.mausteam.json",
+      "readme": "teams/kimon/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/kimon",
+      "kind": "bot",
+      "main": "teams/kimon/bot.md"
+    },
+    {
+      "slug": "kocelmemex-department",
+      "name": "KocelMemeX Department",
+      "summary": "A department shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 8,
+      "package": "packages/kocelmemex-department.md",
+      "manifest": "teams/kocelmemex-department/team.mausteam.json",
+      "readme": "teams/kocelmemex-department/README.md",
+      "members": 8,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/kocelmemex-department",
+      "kind": "department",
+      "main": "teams/kocelmemex-department/team.md"
+    },
+    {
+      "slug": "mailbot",
+      "name": "Mailbot",
+      "summary": "A bot shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/mailbot.md",
+      "manifest": "teams/mailbot/team.mausteam.json",
+      "readme": "teams/mailbot/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/mailbot",
+      "kind": "bot",
+      "main": "teams/mailbot/bot.md"
+    },
+    {
+      "slug": "marketing",
+      "name": "Marketing",
+      "summary": "A department shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 7,
+      "package": "packages/marketing.md",
+      "manifest": "teams/marketing/team.mausteam.json",
+      "readme": "teams/marketing/README.md",
+      "members": 7,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/marketing",
+      "kind": "department",
+      "main": "teams/marketing/team.md"
+    },
+    {
+      "slug": "maus",
+      "name": "Maus包工头主管",
+      "summary": "A portable OpenMausBot team with 1 bot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/maus.md",
+      "manifest": "teams/maus/team.mausteam.json",
+      "readme": "teams/maus/README.md",
+      "members": 1,
+      "skills": [
+        "teams/maus/skills/browser-skill/SKILL.md",
+        "teams/maus/skills/ego-browser/SKILL.md",
+        "teams/maus/skills/xianyu-customer-reply-sop/SKILL.md",
+        "teams/maus/skills/xianyu-listing-creation/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/maus",
+      "kind": "bot",
+      "main": "teams/maus/bot.md"
+    },
+    {
+      "slug": "mausbot",
+      "name": "Social Card Studio",
+      "summary": "Turns a price sheet into scroll-stopping 小红书 car cards.",
+      "category": "Community",
+      "outcome": "Turn a messy price sheet into a set of 小红书 cards with one hook per image",
+      "setupMinutes": 10,
+      "package": "packages/mausbot.md",
+      "manifest": "teams/mausbot/team.mausteam.json",
+      "readme": "teams/mausbot/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/mausbot",
+      "kind": "bot",
+      "main": "teams/mausbot/bot.md"
+    },
+    {
+      "slug": "mausbot-2",
+      "name": "MausBot",
+      "summary": "Your OpenMausBot chief of staff — knows the app, sets things up, runs the team.",
+      "category": "Productivity",
+      "outcome": "Answer how OpenMausBot works and change settings with plain steps.",
+      "setupMinutes": 2,
+      "package": "packages/mausbot-2.md",
+      "manifest": "teams/mausbot-2/team.mausteam.json",
+      "readme": "teams/mausbot-2/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/mausbot-2",
+      "kind": "bot",
+      "main": "teams/mausbot-2/bot.md"
+    },
+    {
+      "slug": "mausbot-3",
+      "name": "MausBot",
+      "summary": "A portable OpenMausBot team with 1 bot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/mausbot-3.md",
+      "manifest": "teams/mausbot-3/team.mausteam.json",
+      "readme": "teams/mausbot-3/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/mausbot-3",
+      "kind": "bot",
+      "main": "teams/mausbot-3/bot.md"
+    },
+    {
+      "slug": "mausbot-4",
+      "name": "MausBot",
+      "summary": "A bot shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/mausbot-4.md",
+      "manifest": "teams/mausbot-4/team.mausteam.json",
+      "readme": "teams/mausbot-4/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/mausbot-4",
+      "kind": "bot",
+      "main": "teams/mausbot-4/bot.md"
+    },
+    {
+      "slug": "mausbot-5",
+      "name": "MausBot",
+      "summary": "A bot shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/mausbot-5.md",
+      "manifest": "teams/mausbot-5/team.mausteam.json",
+      "readme": "teams/mausbot-5/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/mausbot-5",
+      "kind": "bot",
+      "main": "teams/mausbot-5/bot.md"
+    },
+    {
+      "slug": "mausbot-6",
+      "name": "MausBot",
+      "summary": "A bot shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/mausbot-6.md",
+      "manifest": "teams/mausbot-6/team.mausteam.json",
+      "readme": "teams/mausbot-6/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/mausbot-6",
+      "kind": "bot",
+      "main": "teams/mausbot-6/bot.md"
+    },
+    {
+      "slug": "mausbot-7",
+      "name": "MausBot",
+      "summary": "A practical personal assistant and team coordinator.",
+      "category": "Community",
+      "outcome": "Get everyday work done through one practical personal assistant.",
+      "setupMinutes": 2,
+      "package": "packages/mausbot-7.md",
+      "manifest": "teams/mausbot-7/team.mausteam.json",
+      "readme": "teams/mausbot-7/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/mausbot-7",
+      "kind": "bot",
+      "main": "teams/mausbot-7/bot.md"
+    },
+    {
+      "slug": "midia",
+      "name": "Midia",
+      "summary": "Especialista em imagens e cinema com IA",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/midia.md",
+      "manifest": "teams/midia/team.mausteam.json",
+      "readme": "teams/midia/README.md",
+      "members": 1,
+      "skills": [
+        "teams/midia/skills/castkit-v1/SKILL.md",
+        "teams/midia/skills/joey-cinema-workflow/SKILL.md",
+        "teams/midia/skills/motiondojo-v1/SKILL.md",
+        "teams/midia/skills/scenecraft-v1/SKILL.md",
+        "teams/midia/skills/shotcaller-v2/SKILL.md",
+        "teams/midia/skills/story-bible-builder/SKILL.md",
+        "teams/midia/skills/voicesheet-v1/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/midia",
+      "kind": "bot",
+      "main": "teams/midia/bot.md"
+    },
+    {
+      "slug": "odyeeey",
+      "name": "Odyeeey",
+      "summary": "首席参谋长 · 统筹分派与收口",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/odyeeey.md",
+      "manifest": "teams/odyeeey/team.mausteam.json",
+      "readme": "teams/odyeeey/README.md",
+      "members": 1,
+      "skills": [
+        "teams/odyeeey/skills/acceptance-environment-readiness/SKILL.md",
+        "teams/odyeeey/skills/agent-reach/SKILL.md",
+        "teams/odyeeey/skills/agent-team-bot-provisioning/SKILL.md",
+        "teams/odyeeey/skills/agent-work-order-dispatch/SKILL.md",
+        "teams/odyeeey/skills/agui-run-card-lifecycle/SKILL.md",
+        "teams/odyeeey/skills/brandkit/SKILL.md",
+        "teams/odyeeey/skills/bridge-account-harness-routing/SKILL.md",
+        "teams/odyeeey/skills/caveman/SKILL.md",
+        "teams/odyeeey/skills/caveman-commit/SKILL.md",
+        "teams/odyeeey/skills/caveman-compress/SKILL.md",
+        "teams/odyeeey/skills/caveman-help/SKILL.md",
+        "teams/odyeeey/skills/caveman-review/SKILL.md",
+        "teams/odyeeey/skills/caveman-stats/SKILL.md",
+        "teams/odyeeey/skills/cli-creator/SKILL.md",
+        "teams/odyeeey/skills/computer-use/SKILL.md",
+        "teams/odyeeey/skills/convert-documents-to-markdown/SKILL.md",
+        "teams/odyeeey/skills/cxssboot-autopilot/SKILL.md",
+        "teams/odyeeey/skills/cxssboot-caveman/SKILL.md",
+        "teams/odyeeey/skills/cxssboot-goal/SKILL.md",
+        "teams/odyeeey/skills/cxssboot-lazy/SKILL.md",
+        "teams/odyeeey/skills/cxssboot-loop/SKILL.md",
+        "teams/odyeeey/skills/cxssboot-review/SKILL.md",
+        "teams/odyeeey/skills/cxssboot-setup/SKILL.md",
+        "teams/odyeeey/skills/cxssboot-super/SKILL.md",
+        "teams/odyeeey/skills/cxssboot-team/SKILL.md",
+        "teams/odyeeey/skills/design-standard-and-review-gate/SKILL.md",
+        "teams/odyeeey/skills/design-taste-frontend/SKILL.md",
+        "teams/odyeeey/skills/design-taste-frontend-v1/SKILL.md",
+        "teams/odyeeey/skills/diagnose/SKILL.md",
+        "teams/odyeeey/skills/ego-browser/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/odyeeey",
+      "kind": "bot",
+      "main": "teams/odyeeey/bot.md"
+    },
+    {
+      "slug": "phong-van-hanh-it",
+      "name": "Phòng Vận Hành IT",
+      "summary": "A department shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 4,
+      "package": "packages/phong-van-hanh-it.md",
+      "manifest": "teams/phong-van-hanh-it/team.mausteam.json",
+      "readme": "teams/phong-van-hanh-it/README.md",
+      "members": 4,
+      "skills": [
+        "teams/phong-van-hanh-it/skills/enterprise-cybersecurity-operations/SKILL.md",
+        "teams/phong-van-hanh-it/skills/enterprise-network-operations/SKILL.md",
+        "teams/phong-van-hanh-it/skills/ruijie-cloud-management/SKILL.md",
+        "teams/phong-van-hanh-it/skills/vps-security-audit/SKILL.md",
+        "teams/phong-van-hanh-it/skills/wordpress-backup-management/SKILL.md",
+        "teams/phong-van-hanh-it/skills/wordpress-fleet-management/SKILL.md",
+        "teams/phong-van-hanh-it/skills/wordpress-media-optimization/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/phong-van-hanh-it",
+      "kind": "department",
+      "main": "teams/phong-van-hanh-it/team.md"
+    },
+    {
+      "slug": "phu-loc",
+      "name": "Phú Lộc",
+      "summary": "A department shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 3,
+      "package": "packages/phu-loc.md",
+      "manifest": "teams/phu-loc/team.mausteam.json",
+      "readme": "teams/phu-loc/README.md",
+      "members": 3,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/phu-loc",
+      "kind": "department",
+      "main": "teams/phu-loc/team.md"
+    },
+    {
+      "slug": "proxy-validator",
+      "name": "proxy-validator",
+      "summary": "Proxy Validator",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/proxy-validator.md",
+      "manifest": "teams/proxy-validator/team.mausteam.json",
+      "readme": "teams/proxy-validator/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/proxy-validator",
+      "kind": "bot",
+      "main": "teams/proxy-validator/bot.md"
+    },
+    {
+      "slug": "quan-gia",
+      "name": "Quản gia",
+      "summary": "Personal chief of staff that watches your email and meetings and sets up routines for you.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/quan-gia.md",
+      "manifest": "teams/quan-gia/team.mausteam.json",
+      "readme": "teams/quan-gia/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/quan-gia",
+      "kind": "bot",
+      "main": "teams/quan-gia/bot.md"
+    },
+    {
+      "slug": "selma",
+      "name": "Selma",
+      "summary": "Chief of Staff",
+      "category": "Community",
+      "outcome": "Turn a priority into a clear assignment with an owner and acceptance criteria.",
+      "setupMinutes": 2,
+      "package": "packages/selma.md",
+      "manifest": "teams/selma/team.mausteam.json",
+      "readme": "teams/selma/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/selma",
+      "kind": "bot",
+      "main": "teams/selma/bot.md"
+    },
+    {
+      "slug": "seo-growth-2",
+      "name": "Find SEO Growth Opportunities",
+      "summary": "A department shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 6,
+      "package": "packages/seo-growth-2.md",
+      "manifest": "teams/seo-growth-2/team.mausteam.json",
+      "readme": "teams/seo-growth-2/README.md",
+      "members": 4,
+      "skills": [
+        "teams/seo-growth-2/skills/composio-cli/SKILL.md",
+        "teams/seo-growth-2/skills/gepeto/SKILL.md",
+        "teams/seo-growth-2/skills/oo/SKILL.md",
+        "teams/seo-growth-2/skills/oo-create-skill/SKILL.md",
+        "teams/seo-growth-2/skills/oo-find-skills/SKILL.md",
+        "teams/seo-growth-2/skills/oo-publish-skill/SKILL.md",
+        "teams/seo-growth-2/skills/pinokio/SKILL.md",
+        "teams/seo-growth-2/skills/postiz/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "Google Sheets"
+        ]
+      },
+      "folder": "teams/seo-growth-2",
+      "kind": "department",
+      "main": "teams/seo-growth-2/team.md"
+    },
+    {
+      "slug": "sm",
+      "name": "SM",
+      "summary": "用 Scrum 协调后端研发与接口交付。",
+      "category": "Community",
+      "outcome": "形成有明确验收条件的需求分析和访谈记录。",
+      "setupMinutes": 5,
+      "package": "packages/sm.md",
+      "manifest": "teams/sm/team.mausteam.json",
+      "readme": "teams/sm/README.md",
+      "members": 1,
+      "skills": [
+        "teams/sm/skills/browser-business-navigation/SKILL.md",
+        "teams/sm/skills/project-purpose-review/SKILL.md",
+        "teams/sm/skills/wt-dev/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/sm",
+      "kind": "bot",
+      "main": "teams/sm/bot.md"
+    },
+    {
+      "slug": "social-design-studio",
+      "name": "Social Design Studio",
+      "summary": "Chuyên gia thiết kế ấn phẩm mạng xã hội",
+      "category": "Community",
+      "outcome": "Tạo thành phẩm social đúng brief và đọc rõ trên điện thoại.",
+      "setupMinutes": 2,
+      "package": "packages/social-design-studio.md",
+      "manifest": "teams/social-design-studio/team.mausteam.json",
+      "readme": "teams/social-design-studio/README.md",
+      "members": 1,
+      "skills": [
+        "teams/social-design-studio/skills/social-design-delivery/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/social-design-studio",
+      "kind": "bot",
+      "main": "teams/social-design-studio/bot.md"
+    },
+    {
+      "slug": "studio",
+      "name": "Studio",
+      "summary": "AI Studio · Thiết kế & Video (phần hình)",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/studio.md",
+      "manifest": "teams/studio/team.mausteam.json",
+      "readme": "teams/studio/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/studio",
+      "kind": "bot",
+      "main": "teams/studio/bot.md"
+    },
+    {
+      "slug": "swiggy",
+      "name": "Swiggy",
+      "summary": "Personal Swiggy food & grocery shopper",
+      "category": "Community",
+      "outcome": "Build Swiggy Food and Instamart carts and confirm the total before ordering.",
+      "setupMinutes": 2,
+      "package": "packages/swiggy.md",
+      "manifest": "teams/swiggy/team.mausteam.json",
+      "readme": "teams/swiggy/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/swiggy",
+      "kind": "bot",
+      "main": "teams/swiggy/bot.md"
+    },
+    {
+      "slug": "team",
+      "name": "阿奇",
+      "summary": "幕僚长",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/team.md",
+      "manifest": "teams/team/team.mausteam.json",
+      "readme": "teams/team/README.md",
+      "members": 1,
+      "skills": [
+        "teams/team/skills/bot-team-design-and-dispatch/SKILL.md",
+        "teams/team/skills/composio-account-connect/SKILL.md",
+        "teams/team/skills/onboarding-capability-audit/SKILL.md",
+        "teams/team/skills/social-content-reading/SKILL.md",
+        "teams/team/skills/tool-replacement-evaluation/SKILL.md",
+        "teams/team/skills/windows-app-install/SKILL.md",
+        "teams/team/skills/windows-popup-diagnosis/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team",
+      "kind": "bot",
+      "main": "teams/team/bot.md"
+    },
+    {
+      "slug": "team-10",
+      "name": "数据研发部",
+      "summary": "A department shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/team-10.md",
+      "manifest": "teams/team-10/team.mausteam.json",
+      "readme": "teams/team-10/README.md",
+      "members": 2,
+      "skills": [
+        "teams/team-10/skills/ai-usage-metering-modeling/SKILL.md",
+        "teams/team-10/skills/bi-dashboard-delivery-sop/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "Zhijing",
+          "Agent-share",
+          "Ai-rca",
+          "Weknora-public",
+          "Dbx",
+          "Schema-studio",
+          "Laya",
+          "Bi"
+        ]
+      },
+      "folder": "teams/team-10",
+      "kind": "department",
+      "main": "teams/team-10/team.md"
+    },
+    {
+      "slug": "team-11",
+      "name": "小鱼泡",
+      "summary": "中文优先的个人助理，帮你打理 OpenMausBot 里的机器人、模型和日常电脑活儿。",
+      "category": "Community",
+      "outcome": "得到一个中文优先、说话直接的个人助理。",
+      "setupMinutes": 3,
+      "package": "packages/team-11.md",
+      "manifest": "teams/team-11/team.mausteam.json",
+      "readme": "teams/team-11/README.md",
+      "members": 1,
+      "skills": [
+        "teams/team-11/skills/model-routing-setup/SKILL.md",
+        "teams/team-11/skills/system-health-cleanup/SKILL.md",
+        "teams/team-11/skills/voice-provider-setup/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-11",
+      "kind": "bot",
+      "main": "teams/team-11/bot.md"
+    },
+    {
+      "slug": "team-12",
+      "name": "论文助手",
+      "summary": "学术写作助手：从选题到定稿，逐节推进论文。",
+      "category": "Community",
+      "outcome": "把模糊的选题收窄成可写的研究问题和章节骨架。",
+      "setupMinutes": 3,
+      "package": "packages/team-12.md",
+      "manifest": "teams/team-12/team.mausteam.json",
+      "readme": "teams/team-12/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-12",
+      "kind": "bot",
+      "main": "teams/team-12/bot.md"
+    },
+    {
+      "slug": "team-13",
+      "name": "قائد سلسلة الكتب",
+      "summary": "قائد المشروع ورئيس تحرير السلسلة",
+      "category": "Community",
+      "outcome": "تنظيم مرجع معتمد لكل كتاب وخطة عمل واضحة للفريق.",
+      "setupMinutes": 2,
+      "package": "packages/team-13.md",
+      "manifest": "teams/team-13/team.mausteam.json",
+      "readme": "teams/team-13/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-13",
+      "kind": "bot",
+      "main": "teams/team-13/bot.md"
+    },
+    {
+      "slug": "team-14",
+      "name": "办公助理",
+      "summary": "Excel/PPT/Word 文档处理",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/team-14.md",
+      "manifest": "teams/team-14/team.mausteam.json",
+      "readme": "teams/team-14/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-14",
+      "kind": "bot",
+      "main": "teams/team-14/bot.md"
+    },
+    {
+      "slug": "team-15",
+      "name": "数据分析团队",
+      "summary": "A department shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 3,
+      "package": "packages/team-15.md",
+      "manifest": "teams/team-15/team.mausteam.json",
+      "readme": "teams/team-15/README.md",
+      "members": 3,
+      "skills": [],
+      "requires": {
+        "apps": [
+          "Context7",
+          "Playwright"
+        ]
+      },
+      "folder": "teams/team-15",
+      "kind": "department",
+      "main": "teams/team-15/team.md"
+    },
+    {
+      "slug": "team-16",
+      "name": "宰相",
+      "summary": "接管一切",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/team-16.md",
+      "manifest": "teams/team-16/team.mausteam.json",
+      "readme": "teams/team-16/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-16",
+      "kind": "bot",
+      "main": "teams/team-16/bot.md"
+    },
+    {
+      "slug": "team-2",
+      "name": "落地官",
+      "summary": "执行落地助理",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/team-2.md",
+      "manifest": "teams/team-2/team.mausteam.json",
+      "readme": "teams/team-2/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-2",
+      "kind": "bot",
+      "main": "teams/team-2/bot.md"
+    },
+    {
+      "slug": "team-3",
+      "name": "视频制作专家",
+      "summary": "从口播稿到竖屏视频与可编辑草稿",
+      "category": "Community",
+      "outcome": "先交付可审阅的口播稿，确认后再制作视频。",
+      "setupMinutes": 10,
+      "package": "packages/team-3.md",
+      "manifest": "teams/team-3/team.mausteam.json",
+      "readme": "teams/team-3/README.md",
+      "members": 1,
+      "skills": [
+        "teams/team-3/skills/rea-video/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-3",
+      "kind": "bot",
+      "main": "teams/team-3/bot.md"
+    },
+    {
+      "slug": "team-4",
+      "name": "董事长",
+      "summary": "替你排期、分派、验收的幕僚长：把杂事和团队管起来，只把结论交给你。",
+      "category": "Productivity",
+      "outcome": "每天一页优先级清单：先做什么、为什么、什么在等你拍板。",
+      "setupMinutes": 10,
+      "package": "packages/team-4.md",
+      "manifest": "teams/team-4/team.mausteam.json",
+      "readme": "teams/team-4/README.md",
+      "members": 1,
+      "skills": [
+        "teams/team-4/skills/chief-of-staff-playbook/SKILL.md",
+        "teams/team-4/skills/chief-of-staff-rhythm/SKILL.md",
+        "teams/team-4/skills/coordinate-and-audit-bots/SKILL.md",
+        "teams/team-4/skills/openmausbot-engine-check/SKILL.md",
+        "teams/team-4/skills/record-and-replay-desktop/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-4",
+      "kind": "bot",
+      "main": "teams/team-4/bot.md"
+    },
+    {
+      "slug": "team-5",
+      "name": "小测",
+      "summary": "SmartBI 报表测试（V10/V11 对比 / 回归 / 问题记录）",
+      "category": "Community",
+      "outcome": "给任意团队一个只读的报表对比测试助手，从测试范围到问题清单都能交得出去。",
+      "setupMinutes": 2,
+      "package": "packages/team-5.md",
+      "manifest": "teams/team-5/team.mausteam.json",
+      "readme": "teams/team-5/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-5",
+      "kind": "bot",
+      "main": "teams/team-5/bot.md"
+    },
+    {
+      "slug": "team-6",
+      "name": "ทีนาย",
+      "summary": "Personal bot in OpenMausBot, responsible for audio-to-piano transcription and general assistance",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/team-6.md",
+      "manifest": "teams/team-6/team.mausteam.json",
+      "readme": "teams/team-6/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-6",
+      "kind": "bot",
+      "main": "teams/team-6/bot.md"
+    },
+    {
+      "slug": "team-7",
+      "name": "投资数据专员",
+      "summary": "A股数据采集、更新与存储",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/team-7.md",
+      "manifest": "teams/team-7/team.mausteam.json",
+      "readme": "teams/team-7/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-7",
+      "kind": "bot",
+      "main": "teams/team-7/bot.md"
+    },
+    {
+      "slug": "team-8",
+      "name": "知源",
+      "summary": "AI 知识库专家",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/team-8.md",
+      "manifest": "teams/team-8/team.mausteam.json",
+      "readme": "teams/team-8/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-8",
+      "kind": "bot",
+      "main": "teams/team-8/bot.md"
+    },
+    {
+      "slug": "team-9",
+      "name": "量化助手",
+      "summary": "A practical assistant for quantitative analysis, research, and reproducible technical work.",
+      "category": "Community",
+      "outcome": "Turn data and research questions into verifiable results, readable code, and clear deliverables.",
+      "setupMinutes": 2,
+      "package": "packages/team-9.md",
+      "manifest": "teams/team-9/team.mausteam.json",
+      "readme": "teams/team-9/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": [
+          "Gmail",
+          "Googlecalendar",
+          "Googledrive",
+          "Notion",
+          "Github"
+        ]
+      },
+      "folder": "teams/team-9",
+      "kind": "bot",
+      "main": "teams/team-9/bot.md"
+    },
+    {
+      "slug": "video-repurposing",
+      "name": "Video Repurposing Team",
+      "summary": "Turn long recordings into vertical social clips, captioned reels, and verified MP4 exports.",
+      "category": "Marketing",
+      "outcome": "Turn a 30-60 minute podcast or webinar into 3-10 vertical 9:16 social clips with animated captions",
+      "setupMinutes": 5,
+      "package": "packages/video-repurposing.md",
+      "manifest": "teams/video-repurposing/team.mausteam.json",
+      "readme": "teams/video-repurposing/README.md",
+      "members": 3,
+      "skills": [
+        "teams/video-repurposing/skills/caption-and-brand-polish/SKILL.md",
+        "teams/video-repurposing/skills/viral-clip-production/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "Levea",
+          "Google Drive"
+        ]
+      },
+      "folder": "teams/video-repurposing",
+      "kind": "department",
+      "main": "teams/video-repurposing/team.md"
+    },
+    {
+      "slug": "ziggy",
+      "name": "Ziggy",
+      "summary": "A bot shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/ziggy.md",
+      "manifest": "teams/ziggy/team.mausteam.json",
+      "readme": "teams/ziggy/README.md",
+      "members": 1,
+      "skills": [
+        "teams/ziggy/skills/destoon-prototype/SKILL.md",
+        "teams/ziggy/skills/destoon-template-convert/SKILL.md",
+        "teams/ziggy/skills/find-skills/SKILL.md",
+        "teams/ziggy/skills/modura-ui/SKILL.md",
+        "teams/ziggy/skills/mycms-engineer/SKILL.md",
+        "teams/ziggy/skills/mycms-preset/SKILL.md",
+        "teams/ziggy/skills/mycms-prototype/SKILL.md",
+        "teams/ziggy/skills/mycms-template-convert/SKILL.md",
+        "teams/ziggy/skills/mycms-template-dev/SKILL.md",
+        "teams/ziggy/skills/openspec-apply-change/SKILL.md",
+        "teams/ziggy/skills/openspec-archive-change/SKILL.md",
+        "teams/ziggy/skills/openspec-explore/SKILL.md",
+        "teams/ziggy/skills/openspec-propose/SKILL.md",
+        "teams/ziggy/skills/xampp-index/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/ziggy",
+      "kind": "bot",
+      "main": "teams/ziggy/bot.md"
     }
   ]
 }

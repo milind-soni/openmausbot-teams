@@ -1,0 +1,90 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "KocelMemeX Department",
+    "description": "Shared from MausBot. Its bots, skills, group chats and routines arrive as new copies; routines start paused and chat history never travels.",
+    "members": [
+      {
+        "key": "kocelmemex-logger",
+        "name": "KocelMemeX Logger",
+        "title": "Performance and Trade Records Specialist",
+        "description": "Records paper trades and produces performance reports",
+        "appearance": {
+          "color": "yellow"
+        }
+      },
+      {
+        "key": "kocelmemex-executor",
+        "name": "KocelMemeX Executor",
+        "title": "Trading Execution Specialist",
+        "description": "Executes paper Solana memecoin trades only; live locked",
+        "appearance": {
+          "color": "pink"
+        }
+      },
+      {
+        "key": "kocelmemex-risk-manager",
+        "name": "KocelMemeX Risk Manager",
+        "title": "Risk Management Specialist",
+        "description": "Enforces paper portfolio limits and approves trade sizes",
+        "appearance": {
+          "color": "cyan"
+        }
+      },
+      {
+        "key": "kocelmemex-strategist",
+        "name": "KocelMemeX Strategist",
+        "title": "Trading Strategy Specialist",
+        "description": "Selects one scalping strategy and trade plan per opportunity",
+        "appearance": {
+          "color": "purple"
+        }
+      },
+      {
+        "key": "kocelmemex-analyst",
+        "name": "KocelMemeX Analyst",
+        "title": "Market Analysis Specialist",
+        "description": "Analyzes shortlisted Solana memecoins for scalping setups",
+        "appearance": {
+          "color": "orange"
+        }
+      },
+      {
+        "key": "kocelmemex-filter",
+        "name": "KocelMemeX Filter",
+        "title": "Token Safety and Liquidity Specialist",
+        "description": "Screens Solana tokens for safety and liquidity before analysis",
+        "appearance": {
+          "color": "red"
+        }
+      },
+      {
+        "key": "kocelmemex-scout",
+        "name": "KocelMemeX Scout",
+        "title": "Memecoin Discovery Specialist",
+        "description": "Discovers Solana memecoin opportunities for paper trading",
+        "appearance": {
+          "color": "blue"
+        }
+      },
+      {
+        "key": "kocelmemex-commander",
+        "name": "KocelMemeX Commander",
+        "title": "Chief of Staff / Department Commander",
+        "description": "Leads the KocelMemeX Solana memecoin paper-trading department",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "KocelMemeX Department Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "member",
+        "member": "kocelmemex-commander"
+      }
+    }
+  }
+}

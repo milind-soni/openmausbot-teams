@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Daily AI News Report",
+    "description": "Shared from MausBot. The bot arrives as a new copy with its skills and routines; routines start paused and chat history never travels.",
+    "members": [
+      {
+        "key": "daily-ai-news-report",
+        "name": "Daily AI News Report",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "red"
+        }
+      }
+    ],
+    "room": {
+      "name": "Daily AI News Report Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

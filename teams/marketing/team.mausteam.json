@@ -1,0 +1,81 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Marketing",
+    "description": "Shared from MausBot. Its bots, skills, group chats and routines arrive as new copies; routines start paused and chat history never travels.",
+    "members": [
+      {
+        "key": "revisor-editorial-b2a",
+        "name": "Revisor Editorial B2A",
+        "title": "Revisor Editorial e Técnico de Publicações",
+        "description": "Revisa conteúdo, arte, legenda, CTA, rastreamento e aprovação antes do Publicador Meta.",
+        "appearance": {
+          "color": "yellow"
+        }
+      },
+      {
+        "key": "publicador-meta-b2a",
+        "name": "Publicador Meta B2A",
+        "title": "Executor de Publicações Facebook e Instagram",
+        "description": "Executa publicações aprovadas da B2A Engenharia Imobiliária no Facebook e Instagram e confirma o resultado.",
+        "appearance": {
+          "color": "pink"
+        }
+      },
+      {
+        "key": "analista-de-crescimento",
+        "name": "Analista de Crescimento",
+        "title": "Analista de Métricas e Otimização",
+        "description": "Acompanha resultados, identifica oportunidades e sugere melhorias.",
+        "appearance": {
+          "color": "cyan"
+        }
+      },
+      {
+        "key": "produtor-visual",
+        "name": "Produtor Visual",
+        "title": "Designer e Produtor de Vídeo",
+        "description": "Transforma pautas em briefings visuais, artes, carrosséis e roteiros de produção.",
+        "appearance": {
+          "color": "purple"
+        }
+      },
+      {
+        "key": "redator-de-conteudo",
+        "name": "Redator de Conteúdo",
+        "title": "Copywriter e Roteirista",
+        "description": "Escreve legendas, carrosséis, roteiros, anúncios e respostas de conteúdo.",
+        "appearance": {
+          "color": "orange"
+        }
+      },
+      {
+        "key": "planejador-social",
+        "name": "Planejador Social",
+        "title": "Estrategista de Redes Sociais",
+        "description": "Planeja pautas, formatos, frequência e campanhas para cada canal.",
+        "appearance": {
+          "color": "red"
+        }
+      },
+      {
+        "key": "estrategista-de-marketing",
+        "name": "Estrategista de Marketing",
+        "title": "Chief de Marketing e Conteúdo",
+        "description": "Coordena a estratégia editorial, prioridades e entregas do time.",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "Marketing Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "member",
+        "member": "estrategista-de-marketing"
+      }
+    }
+  }
+}

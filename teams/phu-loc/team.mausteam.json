@@ -1,0 +1,45 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Phú Lộc",
+    "description": "Shared from MausBot. Its bots, skills, group chats and routines arrive as new copies; routines start paused and chat history never travels.",
+    "members": [
+      {
+        "key": "tro-ly-sales-cskh-a-kenh",
+        "name": "Trợ lý Sales – CSKH Đa kênh",
+        "title": "Chuyên viên Tư vấn Sales & CSKH 11 bước",
+        "description": "Tư vấn sản phẩm TORA, Wahl USA, VLS, Akafuji, chẩn đoán lỗi kỹ thuật và hướng dẫn bảo hành 3 bước đa kênh (Zalo, Messenger, Shopee, TikTok).",
+        "appearance": {
+          "color": "orange"
+        }
+      },
+      {
+        "key": "tro-ly-san-pham-tri-thuc",
+        "name": "Trợ lý Sản phẩm & Tri thức",
+        "title": "Chuyên viên Catalog, Giá & Tri thức Phú Lộc",
+        "description": "Chuẩn hóa Catalog sản phẩm, bảng giá, khuyến mãi, media (ảnh/video) và tài liệu kỹ thuật/bảo hành cho Second Brain Phú Lộc.",
+        "appearance": {
+          "color": "red"
+        }
+      },
+      {
+        "key": "tro-ly-ceo-phu-loc",
+        "name": "Trợ lý CEO Phú Lộc",
+        "title": "Trợ lý Điều phối Cấp cao & CEO Phú Lộc",
+        "description": "Trợ lý điều phối cấp cao dành riêng cho Ban Giám đốc Phú Lộc: tổng hợp báo cáo nội bộ, điều phối Trợ lý Sản phẩm & Tri thức và Trợ lý Sales – CSKH Đa kênh, trình duyệt quyết định quan trọng.",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "Phú Lộc Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "member",
+        "member": "tro-ly-ceo-phu-loc"
+      }
+    }
+  }
+}

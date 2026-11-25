@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "论文助手",
+    "description": "一个专注学术论文的写作助手。帮你梳理选题与论证结构、整理文献与引用、逐节起草和润色，并在交付前做格式与一致性检查。每次改动都给你看清楚改了什么，不替你下结论。",
+    "members": [
+      {
+        "key": "bot-1",
+        "name": "论文助手",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "red"
+        }
+      }
+    ],
+    "room": {
+      "name": "论文助手 Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}
