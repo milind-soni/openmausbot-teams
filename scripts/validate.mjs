@@ -259,6 +259,7 @@ if (!catalog || catalog.format !== "openmaus.catalog" || catalog.version !== 1 |
     else if (!team.package.startsWith("packages/")) fail(`catalog.json: package must stay inside packages/`);
     else validatePackage(team.package, team.slug, team.members);
     if (!safeFile(team.readme, "README.md")) fail(`catalog.json: missing README for ${team.slug}`);
+    if (team.author !== undefined && (!text(team.author, 100) || /[\r\n]/.test(team.author))) fail(`catalog.json: ${team.slug} has an author that isn't one line of up to 100 characters`);
     if (!Array.isArray(team.skills) || (!generated && team.skills.length === 0)) fail(`catalog.json: ${team.slug} needs at least one skill`);
     for (const skill of team.skills ?? []) {
       if (!safeFile(skill, "SKILL.md")) fail(`catalog.json: missing skill ${String(skill)}`);

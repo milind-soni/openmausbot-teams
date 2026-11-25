@@ -254,9 +254,21 @@ export function manifestV1(folder) {
   };
 }
 
+/** Credits that name nobody: what MausBot wrote before its "Published by" field, and the community's own. */
+const NOBODY = new Set(["community", "mausbot community", "mausbot user", "openmausbot user", "a mausbot user", "community contributor", "openmausbot 用户"]);
+
+/** The folder's "Published by" (`author.name`) for the gallery; none when it names nobody. */
+export function catalogAuthor(folder) {
+  const name = folder.meta.author?.name;
+  if (!text(name, 100)) return undefined;
+  const line = name.replace(/\s+/g, " ").trim();
+  return NOBODY.has(line.toLowerCase()) ? undefined : line;
+}
+
 /** The folder's catalog entry. `folder` marks it as generated, and newer apps read the folder itself from it. */
 export function catalogEntry(folder, hasPackage) {
   const { meta, slug } = folder, base = defaults(folder);
+  const author = catalogAuthor(folder);
   return {
     slug, name: meta.name.trim(), summary: meta.tagline.trim(), category: base.category, outcome: base.outcomes[0].slice(0, 300), setupMinutes: base.setupMinutes,
     ...(hasPackage ? { package: `packages/${slug}.md` } : {}),
@@ -265,6 +277,7 @@ export function catalogEntry(folder, hasPackage) {
     skills: folder.skills.map((skill) => `teams/${slug}/skills/${skill.name}/SKILL.md`),
     requires: { apps: base.apps.map((app) => app.label) },
     folder: `teams/${slug}`, kind: folder.kind, main: `teams/${slug}/${folder.main}`,
+    ...(author ? { author } : {}),
   };
 }
 

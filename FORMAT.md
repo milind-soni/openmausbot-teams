@@ -22,6 +22,9 @@ point at files:
 - `agents[].skills: [name]` reads `skills/<name>/SKILL.md`.
 - `agents[].appearance.avatar: avatars/<key>.webp` reads that picture.
 
+`author.name` is the "Published by" name the gallery shows (`catalog.json` copies it as `author`); MausBot fills it from
+its Publish form and writes `Community` when the person leaves it empty, which the gallery doesn't show.
+
 The folder name is the slug, and an `id` in the frontmatter is ignored. `bot.md` holds exactly one bot. Routines must
 say `enabledAfterInstall: false`. Nothing else may be in the folder.
 

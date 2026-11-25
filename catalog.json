@@ -234,7 +234,8 @@
       },
       "folder": "teams/ai-media-studio",
       "kind": "bot",
-      "main": "teams/ai-media-studio/bot.md"
+      "main": "teams/ai-media-studio/bot.md",
+      "author": "MuAPI"
     },
     {
       "slug": "atlas",
@@ -426,7 +427,8 @@
       },
       "folder": "teams/jett-video-editor",
       "kind": "bot",
-      "main": "teams/jett-video-editor/bot.md"
+      "main": "teams/jett-video-editor/bot.md",
+      "author": "Jett"
     },
     {
       "slug": "kimon",
@@ -564,7 +566,8 @@
       },
       "folder": "teams/mausbot-2",
       "kind": "bot",
-      "main": "teams/mausbot-2/bot.md"
+      "main": "teams/mausbot-2/bot.md",
+      "author": "OpenMausBot"
     },
     {
       "slug": "mausbot-3",
@@ -1321,7 +1324,8 @@
       },
       "folder": "teams/video-repurposing",
       "kind": "department",
-      "main": "teams/video-repurposing/team.md"
+      "main": "teams/video-repurposing/team.md",
+      "author": "LiveCore AI"
     },
     {
       "slug": "ziggy",
