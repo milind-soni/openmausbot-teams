@@ -20,7 +20,11 @@
         "teams/seo-growth/skills/content-brief/SKILL.md"
       ],
       "requires": {
-        "apps": ["Google Search Console", "Google Analytics", "Google Sheets"]
+        "apps": [
+          "Google Search Console",
+          "Google Analytics",
+          "Google Sheets"
+        ]
       }
     },
     {
@@ -41,7 +45,9 @@
         "teams/engineering/skills/release-readiness/SKILL.md"
       ],
       "requires": {
-        "apps": ["GitHub"]
+        "apps": [
+          "GitHub"
+        ]
       }
     },
     {
@@ -62,7 +68,11 @@
         "teams/100x-marketing/skills/experiment-review/SKILL.md"
       ],
       "requires": {
-        "apps": ["Google Analytics", "Google Sheets", "Slack"]
+        "apps": [
+          "Google Analytics",
+          "Google Sheets",
+          "Slack"
+        ]
       }
     },
     {
@@ -82,7 +92,10 @@
         "teams/reddit-lead-miner/skills/safe-outreach/SKILL.md"
       ],
       "requires": {
-        "apps": ["Reddit", "Google Sheets"]
+        "apps": [
+          "Reddit",
+          "Google Sheets"
+        ]
       }
     },
     {
@@ -102,7 +115,9 @@
         "teams/competitor-watch/skills/decision-brief/SKILL.md"
       ],
       "requires": {
-        "apps": ["Google Sheets"]
+        "apps": [
+          "Google Sheets"
+        ]
       }
     },
     {
@@ -122,7 +137,50 @@
         "teams/inbox-follow-up/skills/specific-follow-up/SKILL.md"
       ],
       "requires": {
-        "apps": ["Gmail", "HubSpot"]
+        "apps": [
+          "Gmail",
+          "HubSpot"
+        ]
+      }
+    },
+    {
+      "slug": "japan-life-admin",
+      "name": "Japan Life Admin",
+      "summary": "Morning JMA weather and disaster brief plus rule-based Japan life admin errands with cited public sources.",
+      "category": "Lifestyle",
+      "outcome": "Start each day with Japan weather, alerts, and calendar rules, and answer local admin errands with the governing rule and its source.",
+      "setupMinutes": 5,
+      "featured": false,
+      "package": "packages/japan-life-admin.md",
+      "manifest": "teams/japan-life-admin/team.mausteam.json",
+      "readme": "teams/japan-life-admin/README.md",
+      "members": 2,
+      "skills": [
+        "teams/japan-life-admin/skills/japan-weather-safety-brief/SKILL.md",
+        "teams/japan-life-admin/skills/japan-life-admin-errands/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      }
+    },
+    {
+      "slug": "taiwan-life-admin",
+      "name": "Taiwan Life Admin",
+      "summary": "Morning CWA weather, commute, and garbage collection brief plus rule-based Taiwan errands like uniform invoice checks with cited public sources.",
+      "category": "Lifestyle",
+      "outcome": "Start each day with Taiwan weather, commute, and collection timing, and answer local admin errands with the governing rule and its source.",
+      "setupMinutes": 5,
+      "featured": false,
+      "package": "packages/taiwan-life-admin.md",
+      "manifest": "teams/taiwan-life-admin/team.mausteam.json",
+      "readme": "teams/taiwan-life-admin/README.md",
+      "members": 2,
+      "skills": [
+        "teams/taiwan-life-admin/skills/taiwan-morning-commute-brief/SKILL.md",
+        "teams/taiwan-life-admin/skills/taiwan-admin-and-invoice-check/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
       }
     }
   ]
