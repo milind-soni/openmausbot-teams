@@ -76,7 +76,7 @@ routines:
         - 4
         - 5
         - 6
-        - 7
+        - 0
     durationMinutes: 15
     enabledAfterInstall: false
 playbooks:
@@ -173,7 +173,7 @@ Accuracy over speed. Sora owns weather and safety evidence; Seikatsu owns rule-b
 
 ### Morning weather and safety scan
 **Owner:** `sora`  
-**Schedule:** 07:30 on weekdays 1, 2, 3, 4, 5, 6, 7  
+**Schedule:** 07:30 on weekdays 0, 1, 2, 3, 4, 5, 6  
 **Initial state:** paused — the user must enable it
 
 Check the user's saved area against current JMA weather, rain, typhoon, and disaster information. Return one short brief with today's weather, umbrella and commute guidance, any active advisories with their issuing time, and a clear note when no advisory is active. Ask for the area if it is not set. Do not message anyone else or change any settings.

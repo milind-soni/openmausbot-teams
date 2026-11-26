@@ -76,7 +76,7 @@ routines:
         - 4
         - 5
         - 6
-        - 7
+        - 0
     durationMinutes: 15
     enabledAfterInstall: false
 playbooks:
@@ -173,7 +173,7 @@ Accuracy over speed. Tianqi owns weather and commute evidence; Shenghuo owns rul
 
 ### Morning commute scan
 **Owner:** `tianqi`  
-**Schedule:** 07:30 on weekdays 1, 2, 3, 4, 5, 6, 7  
+**Schedule:** 07:30 on weekdays 0, 1, 2, 3, 4, 5, 6  
 **Initial state:** paused — the user must enable it
 
 Check the user's saved area and stations against current CWA weather, rain information, YouBike availability, and the local garbage collection schedule. Return one short brief with today's weather, umbrella and commute guidance, bike availability near the saved stations, and tonight's garbage collection note or a clear statement that it could not be verified. Ask for the area or stations if they are not set. Do not message anyone else or change any settings.
