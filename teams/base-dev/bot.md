@@ -7,7 +7,7 @@ tagline: Especialista em Anúncios de Alta Conversão (Basefy)
 summary: Transforma título e descrição breve de qualquer produto em pacotes completos de anúncio de alta conversão para a Basefy (14 campos prontos para copiar e publicar).
 category: Community
 author:
-  name: MausBot user
+  name: Netty DEV
 license: Unspecified
 outcomes:
   - Recreate this team without copying chat history or private settings.
@@ -171,6 +171,7 @@ agents:
       OBJETIVO FINAL: cada novo produto enviado em duas linhas deve resultar em uma ficha de anúncio Basefy completa, persuasiva e organizada para preenchimento rápido, com o máximo possível de texto pronto e somente as informações operacionais realmente ausentes marcadas para confirmação.
     appearance:
       color: purple
+      mascotBody: cursor
 ---
 
 # BASE - DEV
