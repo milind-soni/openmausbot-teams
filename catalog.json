@@ -454,6 +454,32 @@
       ]
     },
     {
+      "slug": "big4-consultant-for-bots",
+      "name": "Big4 Consultant for Bots",
+      "summary": "External consultant: team performance transformation",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/big4-consultant-for-bots.md",
+      "manifest": "teams/big4-consultant-for-bots/team.mausteam.json",
+      "readme": "teams/big4-consultant-for-bots/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/big4-consultant-for-bots",
+      "kind": "bot",
+      "main": "teams/big4-consultant-for-bots/bot.md",
+      "avatars": [
+        {
+          "key": "big4-consultant-for-bots",
+          "name": "Big4 Consultant for Bots",
+          "color": "pink"
+        }
+      ]
+    },
+    {
       "slug": "ceo",
       "name": "Ceo",
       "summary": "個人 AI 幕僚長",
@@ -505,6 +531,37 @@
           "color": "blue",
           "mascotBody": "cat",
           "mascotExpression": "curious"
+        }
+      ]
+    },
+    {
+      "slug": "colin",
+      "name": "Colin",
+      "summary": "软件开发助手",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/colin.md",
+      "manifest": "teams/colin/team.mausteam.json",
+      "readme": "teams/colin/README.md",
+      "members": 1,
+      "skills": [
+        "teams/colin/skills/code-review/SKILL.md",
+        "teams/colin/skills/coding-colin/SKILL.md",
+        "teams/colin/skills/ponytail-review/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/colin",
+      "kind": "bot",
+      "main": "teams/colin/bot.md",
+      "avatars": [
+        {
+          "key": "colin",
+          "name": "Colin",
+          "color": "teal",
+          "mascotBody": "cursor"
         }
       ]
     },
@@ -682,6 +739,33 @@
       ]
     },
     {
+      "slug": "juno-csm",
+      "name": "Juno - CSM",
+      "summary": "Customer success bot that posts every Stripe and Whop sale into chat.",
+      "category": "Community",
+      "outcome": "See every new Stripe and Whop sale in chat within about a minute.",
+      "setupMinutes": 2,
+      "package": "packages/juno-csm.md",
+      "manifest": "teams/juno-csm/team.mausteam.json",
+      "readme": "teams/juno-csm/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/juno-csm",
+      "kind": "bot",
+      "main": "teams/juno-csm/bot.md",
+      "avatars": [
+        {
+          "key": "juno-csm",
+          "name": "Juno - CSM",
+          "color": "green",
+          "mascotBody": "circle"
+        }
+      ]
+    },
+    {
       "slug": "kimon",
       "name": "Kimon",
       "summary": "A bot shared from MausBot.",
@@ -705,6 +789,32 @@
           "name": "Kimon",
           "color": "yellow",
           "mascotBody": "cursor"
+        }
+      ]
+    },
+    {
+      "slug": "kisho",
+      "name": "kisho",
+      "summary": "Kisho",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/kisho.md",
+      "manifest": "teams/kisho/team.mausteam.json",
+      "readme": "teams/kisho/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/kisho",
+      "kind": "bot",
+      "main": "teams/kisho/bot.md",
+      "avatars": [
+        {
+          "key": "kisho",
+          "name": "kisho",
+          "color": "yellow"
         }
       ]
     },
@@ -913,6 +1023,36 @@
       ]
     },
     {
+      "slug": "mausbot-10",
+      "name": "MausBot",
+      "summary": "A bot shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/mausbot-10.md",
+      "manifest": "teams/mausbot-10/team.mausteam.json",
+      "readme": "teams/mausbot-10/README.md",
+      "members": 1,
+      "skills": [
+        "teams/mausbot-10/skills/api-anything/SKILL.md",
+        "teams/mausbot-10/skills/graphify/SKILL.md",
+        "teams/mausbot-10/skills/saved-reels-to-skill/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/mausbot-10",
+      "kind": "bot",
+      "main": "teams/mausbot-10/bot.md",
+      "avatars": [
+        {
+          "key": "mausbot",
+          "name": "MausBot",
+          "color": "chrome"
+        }
+      ]
+    },
+    {
       "slug": "mausbot-2",
       "name": "MausBot",
       "summary": "Your OpenMausBot chief of staff — knows the app, sets things up, runs the team.",
@@ -1070,6 +1210,58 @@
       ]
     },
     {
+      "slug": "mausbot-8",
+      "name": "MausBot",
+      "summary": "A personal assistant for daily priorities, research and practical tasks.",
+      "category": "Community",
+      "outcome": "Get help with daily priorities, research, writing and tasks across connected apps.",
+      "setupMinutes": 2,
+      "package": "packages/mausbot-8.md",
+      "manifest": "teams/mausbot-8/team.mausteam.json",
+      "readme": "teams/mausbot-8/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/mausbot-8",
+      "kind": "bot",
+      "main": "teams/mausbot-8/bot.md",
+      "avatars": [
+        {
+          "key": "mausbot",
+          "name": "MausBot",
+          "color": "chrome"
+        }
+      ]
+    },
+    {
+      "slug": "mausbot-9",
+      "name": "MausBot",
+      "summary": "A personal assistant and team coordinator.",
+      "category": "Community",
+      "outcome": "Summarize priorities and coordinate work across your own bots.",
+      "setupMinutes": 2,
+      "package": "packages/mausbot-9.md",
+      "manifest": "teams/mausbot-9/team.mausteam.json",
+      "readme": "teams/mausbot-9/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/mausbot-9",
+      "kind": "bot",
+      "main": "teams/mausbot-9/bot.md",
+      "avatars": [
+        {
+          "key": "mausbot",
+          "name": "MausBot",
+          "color": "chrome"
+        }
+      ]
+    },
+    {
       "slug": "midia",
       "name": "Midia",
       "summary": "Especialista em imagens e cinema com IA",
@@ -1158,6 +1350,32 @@
           "key": "odyeeey",
           "name": "Odyeeey",
           "color": "chrome"
+        }
+      ]
+    },
+    {
+      "slug": "petsourcingexpert",
+      "name": "PetSourcingExpert",
+      "summary": "Pet Food and Product Sourcing Specialist",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/petsourcingexpert.md",
+      "manifest": "teams/petsourcingexpert/team.mausteam.json",
+      "readme": "teams/petsourcingexpert/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/petsourcingexpert",
+      "kind": "bot",
+      "main": "teams/petsourcingexpert/bot.md",
+      "avatars": [
+        {
+          "key": "petsourcingexpert",
+          "name": "PetSourcingExpert",
+          "color": "orange"
         }
       ]
     },
@@ -1748,6 +1966,102 @@
           "name": "宰相",
           "color": "chrome",
           "mascotBody": "monster"
+        }
+      ]
+    },
+    {
+      "slug": "team-17",
+      "name": "软件制作",
+      "summary": "A department shared from MausBot.",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 8,
+      "package": "packages/team-17.md",
+      "manifest": "teams/team-17/team.mausteam.json",
+      "readme": "teams/team-17/README.md",
+      "members": 8,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-17",
+      "kind": "department",
+      "main": "teams/team-17/team.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "测试员",
+          "color": "teal",
+          "mascotBody": "obj-camera"
+        },
+        {
+          "key": "bot-2",
+          "name": "疑难专家",
+          "color": "yellow",
+          "mascotBody": "vampire"
+        },
+        {
+          "key": "bot-3",
+          "name": "运维员",
+          "color": "pink",
+          "mascotBody": "obj-controller"
+        },
+        {
+          "key": "bot-4",
+          "name": "复杂代码员",
+          "color": "cyan",
+          "mascotBody": "monster"
+        },
+        {
+          "key": "bot-5",
+          "name": "代码员",
+          "color": "yellow",
+          "mascotBody": "monster"
+        },
+        {
+          "key": "pm",
+          "name": "软件 PM",
+          "color": "pink",
+          "mascotBody": "star"
+        },
+        {
+          "key": "bot-7",
+          "name": "审查员",
+          "color": "blue",
+          "mascotBody": "blob"
+        },
+        {
+          "key": "bot-8",
+          "name": "总工",
+          "color": "purple",
+          "mascotBody": "monster"
+        }
+      ]
+    },
+    {
+      "slug": "team-18",
+      "name": "总指挥",
+      "summary": "总指挥",
+      "category": "Community",
+      "outcome": "Recreate this team without copying chat history or private settings.",
+      "setupMinutes": 2,
+      "package": "packages/team-18.md",
+      "manifest": "teams/team-18/team.mausteam.json",
+      "readme": "teams/team-18/README.md",
+      "members": 1,
+      "skills": [],
+      "requires": {
+        "apps": []
+      },
+      "folder": "teams/team-18",
+      "kind": "bot",
+      "main": "teams/team-18/bot.md",
+      "avatars": [
+        {
+          "key": "bot-1",
+          "name": "总指挥",
+          "color": "chrome",
+          "mascotBody": "laddu"
         }
       ]
     },

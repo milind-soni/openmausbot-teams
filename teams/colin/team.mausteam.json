@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Colin",
+    "description": "负责软件开发。默认使用 coding-colin，先读架构文档和相关代码，写伪代码再编码，完成后用 code-review 和 ponytail-review 审查。",
+    "members": [
+      {
+        "key": "colin",
+        "name": "Colin",
+        "title": "软件开发助手",
+        "description": "负责软件开发。默认使用 coding-colin，先读架构文档和相关代码，写伪代码再编码，完成后用 code-review 和 ponytail-review 审查。",
+        "appearance": {
+          "color": "teal"
+        }
+      }
+    ],
+    "room": {
+      "name": "Colin Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

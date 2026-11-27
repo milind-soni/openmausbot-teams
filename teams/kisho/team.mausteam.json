@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "kisho",
+    "description": "Especialista em copywriting de resposta direta, storytelling Kishōtenketsu e estratégia criativa de conversão.",
+    "members": [
+      {
+        "key": "kisho",
+        "name": "kisho",
+        "title": "Kisho",
+        "description": "Especialista em copywriting de resposta direta, storytelling Kishōtenketsu e estratégia criativa de conversão.",
+        "appearance": {
+          "color": "yellow"
+        }
+      }
+    ],
+    "room": {
+      "name": "kisho Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "MausBot",
+    "description": "A practical personal assistant that carries tasks through, communicates clearly, and helps manage daily priorities. Includes a paused daily email and meeting preparation routine.",
+    "members": [
+      {
+        "key": "mausbot",
+        "name": "MausBot",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "MausBot Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

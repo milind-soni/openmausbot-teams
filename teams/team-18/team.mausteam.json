@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "总指挥",
+    "description": "只和你对话、派工、汇总与验收把关，不亲自动手",
+    "members": [
+      {
+        "key": "bot-1",
+        "name": "总指挥",
+        "title": "总指挥",
+        "description": "只和你对话、派工、汇总与验收把关，不亲自动手",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "总指挥 Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

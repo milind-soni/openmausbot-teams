@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "MausBot",
+    "description": "Manage daily priorities, coordinate specialist bots, and set up helpful automations without copying anyone's accounts or history.",
+    "members": [
+      {
+        "key": "mausbot",
+        "name": "MausBot",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "blue"
+        }
+      }
+    ],
+    "room": {
+      "name": "MausBot Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Juno - CSM",
+    "description": "A customer success bot. Its sales-feed skill posts one line in chat for every successful live sale from your Stripe accounts and Whop. It reads sales with read-only keys and adds no new webhooks. Chat history and keys are not included.",
+    "members": [
+      {
+        "key": "juno-csm",
+        "name": "Juno - CSM",
+        "title": "Specialist",
+        "description": "",
+        "appearance": {
+          "color": "green"
+        }
+      }
+    ],
+    "room": {
+      "name": "Juno - CSM Room",
+      "bulletin": "",
+      "defaultResponder": {
+        "kind": "mentions"
+      }
+    }
+  }
+}
